@@ -1,0 +1,598 @@
+
+:root {
+    --bg: #ffffff;
+    --text: #111111;
+    --muted: #666666;
+    --line: #dcdcdc;
+    --soft: #f6f6f6;
+    --dark: #000000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.65;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 1px solid #000000;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.site-header {
+    border-bottom: 1px solid var(--line);
+    background: #ffffff;
+}
+
+.banner-wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 18px 18px 10px;
+}
+
+.banner {
+    width: 100%;
+    display: block;
+}
+
+.nav {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 12px 18px 16px;
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+
+.nav a {
+    border-bottom: none;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 44px 22px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: 34px;
+    align-items: start;
+}
+
+.kicker {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--muted);
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: clamp(36px, 5vw, 64px);
+    margin-bottom: 18px;
+}
+
+h2 {
+    font-size: 30px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 8px;
+    margin-top: 46px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.lead {
+    font-size: 21px;
+    color: #222222;
+}
+
+.card {
+    border: 1px solid var(--line);
+    background: var(--soft);
+    padding: 22px;
+}
+
+.button {
+    display: inline-block;
+    background: #000000;
+    color: #ffffff;
+    padding: 12px 18px;
+    margin-top: 10px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.article-list {
+    display: grid;
+    gap: 18px;
+}
+
+.article {
+    border: 1px solid var(--line);
+    padding: 20px;
+    background: #ffffff;
+}
+
+.meta {
+    color: var(--muted);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.notice {
+    background: #efe4d6;
+    color: #4a3523;
+    padding: 22px;
+    margin-top: 26px;
+    border-left: 4px solid #FF8C00;
+    border-radius: 0 12px 12px 0;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.notice h2,
+.notice h3 {
+    color: #8f4a00;
+    margin-top: 0;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #cfc5ba;
+    padding-bottom: 8px;
+}
+
+.notice p {
+    color: #5a4330;
+}
+
+.notice a {
+    color: #8f4a00;
+    border-bottom-color: #8f4a00;
+    font-weight: 700;
+}
+
+.notice a:hover,
+.notice a:focus {
+    color: #FF8C00;
+    border-bottom-color: #FF8C00;
+}
+
+
+.footer {
+    border-top: 1px solid var(--line);
+    background: #f5f5f5;
+    padding: 26px 18px;
+    text-align: center;
+    color: #444444;
+    font-size: 13px;
+}
+
+.policy-text {
+    text-align: justify;
+}
+
+.policy-text p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.policy-text h1,
+.policy-text h2,
+.policy-text h3 {
+    text-align: left;
+}
+
+@media (max-width: 760px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .container {
+        padding: 30px 18px;
+    }
+}
+
+.policy-text, .policy-text p { text-align: justify; }
+
+.article-list .article h3 { margin-top: 0; }
+
+.form-note { border: 1px solid var(--line); padding: 18px; background: #fafafa; }
+
+.policy-text ul {
+    text-align: left;
+    margin: 18px 0 24px 24px;
+    padding-left: 20px;
+}
+
+.policy-text li {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+.nav {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nav a {
+    white-space: nowrap;
+}
+
+.article-list {
+    gap: 18px;
+}
+
+.article h3 {
+    line-height: 1.25;
+}
+
+.nav {
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.nav a {
+    white-space: nowrap;
+    font-size: 0.94rem;
+}
+
+.nav {
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.nav a {
+    white-space: nowrap;
+    font-size: 0.88rem;
+}
+
+
+.nav a:hover,
+.nav a:focus {
+    color: #FF8C00;
+    border-color: #FF8C00;
+}
+
+.article a:hover,
+.article a:focus,
+.policy-text a:hover,
+.policy-text a:focus {
+    color: #FF8C00;
+}
+
+
+.article:hover {
+    border-color: #FF8C00;
+    box-shadow: 0 8px 22px rgba(255, 140, 0, 0.18);
+    transform: translateY(-2px);
+    transition: all 0.2s ease;
+}
+
+.nav a {
+    font-size: 0.82rem;
+}
+
+
+.gatebreak-form {
+    margin-top: 18px;
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    background: #ffffff;
+}
+
+.gatebreak-form label {
+    display: block;
+    font-weight: 700;
+    margin-top: 14px;
+    margin-bottom: 6px;
+}
+
+.gatebreak-form input,
+.gatebreak-form select,
+.gatebreak-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+    font: inherit;
+    background: #fff;
+}
+
+.gatebreak-form input:focus,
+.gatebreak-form select:focus,
+.gatebreak-form textarea:focus {
+    outline: none;
+    border-color: #FF8C00;
+    box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.16);
+}
+
+.gatebreak-form .checkbox-row {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-weight: 400;
+    line-height: 1.45;
+}
+
+.gatebreak-form .checkbox-row input {
+    width: auto;
+    margin-top: 4px;
+}
+
+.gatebreak-form button {
+    margin-top: 18px;
+    padding: 12px 18px;
+    border: 1px solid #FF8C00;
+    border-radius: 8px;
+    background: #111;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.gatebreak-form button:hover,
+.gatebreak-form button:focus {
+    background: #FF8C00;
+    color: #111;
+}
+
+.support-contributors h4 {
+    margin-top: 20px;
+    font-size: 1.12rem;
+}
+
+
+.notice {
+    border-left: 4px solid #FF8C00;
+    background: #fff8ef;
+    padding: 12px 14px;
+    border-radius: 8px;
+}
+
+.submission-ready {
+    margin-top: 36px;
+    padding-top: 20px;
+    border-top: 2px solid #FF8C00;
+}
+
+.gatebreak-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+    font: inherit;
+    background: #fff;
+    resize: vertical;
+}
+
+.form-actions {
+    margin-top: 18px;
+}
+
+.submission-summary {
+    margin-top: 18px;
+    padding: 14px;
+    border: 1px solid #FF8C00;
+    border-radius: 12px;
+    background: #fff8ef;
+}
+
+.submission-summary pre {
+    white-space: pre-wrap;
+    font-family: inherit;
+    font-size: 0.92rem;
+}
+
+.gatebreak-form input[type="file"] {
+    padding: 9px;
+    background: #fafafa;
+}
+
+.nav a { font-size: 0.78rem; }
+
+
+.nav {
+    gap: 13px;
+    row-gap: 12px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.nav a {
+    margin: 3px 2px;
+    padding: 8px 11px;
+    border-radius: 9px;
+}
+
+.table-wrap {
+    overflow-x: auto;
+    margin: 18px 0 28px 0;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+.comparison-table th,
+.comparison-table td {
+    border: 1px solid #dddddd;
+    padding: 12px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.comparison-table th {
+    background: #111111;
+    color: #ffffff;
+}
+
+.comparison-table tr:hover td {
+    background: #fff8ef;
+}
+
+.comparison-table td:first-child {
+    font-weight: 700;
+    width: 18%;
+}
+
+
+/* GateBreak v30 navigation refinement */
+.nav-main {
+    margin-bottom: 4px;
+}
+
+.nav-no {
+    margin-top: 2px;
+    padding-top: 6px;
+    border-top: 1px solid rgba(255, 140, 0, 0.22);
+}
+
+.nav-no a {
+    font-size: calc(0.78rem - 2px);
+    padding: 6px 9px;
+}
+
+.nav-main a {
+    font-size: 0.78rem;
+}
+
+/* Reduce visible contrast around the banner canvas */
+.site-header,
+.banner-wrap {
+    background: #ffffff;
+}
+
+.banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* GateBreak v31 transparent PNG banner and GitHub footer logo */
+.banner-wrap {
+    background: transparent;
+}
+
+.banner {
+    background: transparent;
+}
+
+.github-hosted {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.github-hosted img {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+
+/* GateBreak v32 footer hosted/workflows row */
+.footer-hosting-row {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+}
+
+.github-hosted,
+.openai-workflows {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin: 3px 0;
+}
+
+.github-hosted img,
+.openai-workflows img {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+
+/* GateBreak v33 footer: GitHub Pages text only */
+.footer-hosting-row,
+.github-hosted,
+.openai-workflows {
+    display: none;
+}
+
+
+/* GateBreak v36 author responsibility notice */
+.author-responsibility-notice {
+    border: 1px solid rgba(255, 140, 0, 0.35);
+    border-left: 6px solid #ff8c00;
+    background: #fffaf3;
+    padding: 18px 20px;
+    margin: 24px 0;
+    border-radius: 10px;
+}
+
+.author-responsibility-notice h2 {
+    margin-top: 0;
+}
+
+
+.nav-sep {
+    color: rgba(255, 255, 255, 0.65);
+    font-weight: 700;
+    margin: 0 2px;
+}
+
+@media (max-width: 760px) {
+    .nav-sep {
+        display: none;
+    }
+}
