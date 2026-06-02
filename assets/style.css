@@ -158,40 +158,16 @@ h3 {
 }
 
 .notice {
-    background: #efe4d6;
-    color: #4a3523;
+    background: #111111;
+    color: #ffffff;
     padding: 22px;
     margin-top: 26px;
-    border-left: 4px solid #FF8C00;
-    border-radius: 0 12px 12px 0;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
-}
-
-.notice h2,
-.notice h3 {
-    color: #8f4a00;
-    margin-top: 0;
-    margin-bottom: 12px;
-    border-bottom: 1px solid #cfc5ba;
-    padding-bottom: 8px;
-}
-
-.notice p {
-    color: #5a4330;
 }
 
 .notice a {
-    color: #8f4a00;
-    border-bottom-color: #8f4a00;
-    font-weight: 700;
+    color: #ffffff;
+    border-bottom-color: #ffffff;
 }
-
-.notice a:hover,
-.notice a:focus {
-    color: #FF8C00;
-    border-bottom-color: #FF8C00;
-}
-
 
 .footer {
     border-top: 1px solid var(--line);
@@ -311,7 +287,7 @@ h3 {
 }
 
 
-.gatebreak-form {
+.gatebreakopen-form {
     margin-top: 18px;
     padding: 18px;
     border: 1px solid #ddd;
@@ -319,16 +295,16 @@ h3 {
     background: #ffffff;
 }
 
-.gatebreak-form label {
+.gatebreakopen-form label {
     display: block;
     font-weight: 700;
     margin-top: 14px;
     margin-bottom: 6px;
 }
 
-.gatebreak-form input,
-.gatebreak-form select,
-.gatebreak-form textarea {
+.gatebreakopen-form input,
+.gatebreakopen-form select,
+.gatebreakopen-form textarea {
     width: 100%;
     box-sizing: border-box;
     padding: 10px 12px;
@@ -338,15 +314,15 @@ h3 {
     background: #fff;
 }
 
-.gatebreak-form input:focus,
-.gatebreak-form select:focus,
-.gatebreak-form textarea:focus {
+.gatebreakopen-form input:focus,
+.gatebreakopen-form select:focus,
+.gatebreakopen-form textarea:focus {
     outline: none;
     border-color: #FF8C00;
     box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.16);
 }
 
-.gatebreak-form .checkbox-row {
+.gatebreakopen-form .checkbox-row {
     display: flex;
     gap: 10px;
     align-items: flex-start;
@@ -354,12 +330,12 @@ h3 {
     line-height: 1.45;
 }
 
-.gatebreak-form .checkbox-row input {
+.gatebreakopen-form .checkbox-row input {
     width: auto;
     margin-top: 4px;
 }
 
-.gatebreak-form button {
+.gatebreakopen-form button {
     margin-top: 18px;
     padding: 12px 18px;
     border: 1px solid #FF8C00;
@@ -370,8 +346,8 @@ h3 {
     cursor: pointer;
 }
 
-.gatebreak-form button:hover,
-.gatebreak-form button:focus {
+.gatebreakopen-form button:hover,
+.gatebreakopen-form button:focus {
     background: #FF8C00;
     color: #111;
 }
@@ -395,7 +371,7 @@ h3 {
     border-top: 2px solid #FF8C00;
 }
 
-.gatebreak-form textarea {
+.gatebreakopen-form textarea {
     width: 100%;
     box-sizing: border-box;
     padding: 10px 12px;
@@ -424,7 +400,7 @@ h3 {
     font-size: 0.92rem;
 }
 
-.gatebreak-form input[type="file"] {
+.gatebreakopen-form input[type="file"] {
     padding: 9px;
     background: #fafafa;
 }
@@ -479,7 +455,7 @@ h3 {
 }
 
 
-/* GateBreak v30 navigation refinement */
+/* GateBreakOpen v30 navigation refinement */
 .nav-main {
     margin-bottom: 4px;
 }
@@ -512,7 +488,7 @@ h3 {
 }
 
 
-/* GateBreak v31 transparent PNG banner and GitHub footer logo */
+/* GateBreakOpen v31 transparent PNG banner and GitHub footer logo */
 .banner-wrap {
     background: transparent;
 }
@@ -535,7 +511,7 @@ h3 {
 }
 
 
-/* GateBreak v32 footer hosted/workflows row */
+/* GateBreakOpen v32 footer hosted/workflows row */
 .footer-hosting-row {
     display: inline-flex;
     align-items: center;
@@ -562,7 +538,7 @@ h3 {
 }
 
 
-/* GateBreak v33 footer: GitHub Pages text only */
+/* GateBreakOpen v33 footer: GitHub Pages text only */
 .footer-hosting-row,
 .github-hosted,
 .openai-workflows {
@@ -570,7 +546,7 @@ h3 {
 }
 
 
-/* GateBreak v36 author responsibility notice */
+/* GateBreakOpen v36 author responsibility notice */
 .author-responsibility-notice {
     border: 1px solid rgba(255, 140, 0, 0.35);
     border-left: 6px solid #ff8c00;
@@ -585,14 +561,776 @@ h3 {
 }
 
 
-.nav-sep {
-    color: rgba(255, 255, 255, 0.65);
-    font-weight: 700;
-    margin: 0 2px;
+/* GateBreakOpen v41: restored menu labels and clean white banner */
+.site-header,
+.banner-wrap,
+.header-inner {
+    background: #ffffff !important;
 }
 
-@media (max-width: 760px) {
-    .nav-sep {
-        display: none;
+.banner {
+    display: block;
+    width: 100%;
+    max-width: 1180px;
+    height: auto;
+    object-fit: contain;
+    background: #ffffff !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-main,
+.nav-no {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.nav-main a,
+.nav-no a {
+    white-space: nowrap;
+}
+
+
+/* GateBreakOpen v42 final header/menu correction */
+.site-header,
+.banner-wrap,
+.header-inner {
+    background: #ffffff !important;
+    overflow: visible !important;
+}
+
+.banner {
+    display: block !important;
+    width: 100% !important;
+    max-width: 1180px !important;
+    height: auto !important;
+    object-fit: contain !important;
+    background: #ffffff !important;
+    margin: 0 auto 14px auto !important;
+}
+
+.nav,
+.nav-main,
+.nav-no {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8px !important;
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+}
+
+.nav a,
+.nav-main a,
+.nav-no a {
+    display: inline-block !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+}
+
+.nav-no a {
+    font-size: calc(0.78rem - 2px) !important;
+}
+
+
+/* GateBreakOpen v43: Mission and Ethics restored */
+.nav,
+.nav-main,
+.nav-no {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8px !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+}
+
+.nav a,
+.nav-main a,
+.nav-no a {
+    display: inline-block !important;
+    white-space: nowrap !important;
+}
+
+
+/* GateBreakOpen v44: restore full screenshot menu, remove Home, clean PNG banner */
+.site-header,
+.banner-wrap,
+.header-inner {
+    background: #ffffff !important;
+    overflow: visible !important;
+}
+
+.banner {
+    display: block !important;
+    width: 100% !important;
+    max-width: 1180px !important;
+    height: auto !important;
+    object-fit: contain !important;
+    background: #ffffff !important;
+    margin: 0 auto 18px auto !important;
+}
+
+.nav,
+.nav-main,
+.nav-secondary,
+.nav-no {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 22px !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    text-align: center !important;
+}
+
+.nav-main {
+    margin-bottom: 14px !important;
+}
+
+.nav-secondary {
+    margin-bottom: 18px !important;
+}
+
+.nav-no {
+    border-top: 1px solid rgba(255, 140, 0, 0.25) !important;
+    padding-top: 14px !important;
+}
+
+.nav a,
+.nav-main a,
+.nav-secondary a,
+.nav-no a {
+    display: inline-block !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+}
+
+.nav-no a {
+    font-size: calc(0.78rem - 2px) !important;
+}
+
+
+/* GateBreakOpen v45 corrections: brand, email, mission content, orange bottom boxes */
+.site-header,
+.banner-wrap,
+.header-inner {
+    background: #ffffff !important;
+    overflow: visible !important;
+}
+
+.banner {
+    display: block !important;
+    width: 100% !important;
+    max-width: 1180px !important;
+    height: auto !important;
+    object-fit: contain !important;
+    background: #ffffff !important;
+    margin: 0 auto 18px auto !important;
+}
+
+.nav,
+.nav-main,
+.nav-secondary,
+.nav-no {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 18px !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    text-align: center !important;
+}
+
+.nav-main {
+    margin-bottom: 12px !important;
+}
+
+.nav-secondary {
+    margin-bottom: 18px !important;
+}
+
+.nav a,
+.nav-main a,
+.nav-secondary a {
+    display: inline-block !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+}
+
+.nav-no {
+    border-top: 1px solid rgba(255, 140, 0, 0.35) !important;
+    padding-top: 14px !important;
+    gap: 10px !important;
+}
+
+.nav-no a {
+    display: inline-block !important;
+    white-space: nowrap !important;
+    background: #ff8c00 !important;
+    color: #111111 !important;
+    border: 1px solid #cc7000 !important;
+    border-radius: 8px !important;
+    padding: 8px 13px !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    font-size: calc(0.78rem - 2px) !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.18) !important;
+}
+
+.nav-no a:hover,
+.nav-no a:focus {
+    background: #111111 !important;
+    color: #ff8c00 !important;
+    border-color: #ff8c00 !important;
+}
+
+.mission-box {
+    border-left: 6px solid #ff8c00 !important;
+    background: #fff7ec !important;
+}
+
+footer {
+    border-top: 4px solid #ff8c00 !important;
+}
+
+
+/* GateBreakOpen v48: full Mission & Ethics statement and logo consistency */
+.site-header,
+.banner-wrap,
+.header-inner {
+    background: #ffffff !important;
+    overflow: visible !important;
+}
+
+.banner {
+    display: block !important;
+    width: 100% !important;
+    max-width: 1180px !important;
+    height: auto !important;
+    object-fit: contain !important;
+    background: #ffffff !important;
+    margin: 0 auto 18px auto !important;
+}
+
+.nav,
+.nav-main,
+.nav-secondary,
+.nav-no {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 18px !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    text-align: center !important;
+}
+
+.nav a,
+.nav-main a,
+.nav-secondary a {
+    display: inline-block !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+}
+
+.nav-no {
+    border-top: 1px solid rgba(255, 140, 0, 0.35) !important;
+    padding-top: 14px !important;
+    gap: 10px !important;
+}
+
+.nav-no a {
+    display: inline-block !important;
+    white-space: nowrap !important;
+    background: #ff8c00 !important;
+    color: #111111 !important;
+    border: 1px solid #cc7000 !important;
+    border-radius: 8px !important;
+    padding: 8px 13px !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    font-size: calc(0.78rem - 2px) !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.18) !important;
+}
+
+.nav-no a:hover,
+.nav-no a:focus {
+    background: #111111 !important;
+    color: #ff8c00 !important;
+    border-color: #ff8c00 !important;
+}
+
+.mission-box {
+    border-left: 6px solid #ff8c00 !important;
+    background: #fff7ec !important;
+}
+
+.mission-complete-hero {
+    margin-top: 28px !important;
+}
+
+
+/* GateBreakOpen v49: readable Mission & Ethics and high-contrast orange final boxes */
+.site-header,
+.banner-wrap,
+.header-inner {
+    background: #ffffff !important;
+    overflow: visible !important;
+}
+
+.banner {
+    display: block !important;
+    width: 100% !important;
+    max-width: 1180px !important;
+    height: auto !important;
+    object-fit: contain !important;
+    background: #ffffff !important;
+    margin: 0 auto 18px auto !important;
+}
+
+.nav,
+.nav-main,
+.nav-secondary,
+.nav-no {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 18px !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    text-align: center !important;
+}
+
+.nav a,
+.nav-main a,
+.nav-secondary a {
+    display: inline-block !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+}
+
+.nav-no {
+    border-top: 1px solid rgba(255, 140, 0, 0.35) !important;
+    padding-top: 14px !important;
+    gap: 10px !important;
+}
+
+.nav-no a {
+    display: inline-block !important;
+    white-space: nowrap !important;
+    background: #ff8c00 !important;
+    color: #111111 !important;
+    border: 1px solid #cc7000 !important;
+    border-radius: 8px !important;
+    padding: 8px 13px !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    font-size: calc(0.78rem - 2px) !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.18) !important;
+}
+
+.nav-no a:hover,
+.nav-no a:focus {
+    background: #111111 !important;
+    color: #ff8c00 !important;
+    border-color: #ff8c00 !important;
+}
+
+.mission-text-readable {
+    max-width: 1180px;
+    margin: 32px auto;
+    padding: 0 12px;
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: #111111;
+}
+
+.mission-text-readable p {
+    margin: 0 0 22px 0;
+    text-align: left;
+}
+
+.final-orange-boxes {
+    max-width: 1180px;
+    margin: 40px auto 10px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.final-orange-box {
+    background: #ff8c00 !important;
+    color: #111111 !important;
+    border: 2px solid #b35f00 !important;
+    border-radius: 12px !important;
+    padding: 24px 28px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.16) !important;
+}
+
+.final-orange-box h2 {
+    color: #111111 !important;
+    margin-top: 0 !important;
+    font-weight: 900 !important;
+    border-bottom: 2px solid rgba(17,17,17,0.35) !important;
+    padding-bottom: 10px !important;
+}
+
+.final-orange-box p {
+    color: #111111 !important;
+    font-weight: 600 !important;
+    line-height: 1.75 !important;
+}
+
+@media (min-width: 900px) {
+    .final-orange-boxes {
+        grid-template-columns: repeat(3, 1fr);
     }
+}
+
+
+/* GateBreakOpen v50 FINAL functioning site */
+.site-header,
+.banner-wrap,
+.header-inner {
+    background: #ffffff !important;
+    overflow: visible !important;
+}
+
+.banner {
+    display: block !important;
+    width: 100% !important;
+    max-width: 1180px !important;
+    height: auto !important;
+    object-fit: contain !important;
+    background: #ffffff !important;
+    margin: 0 auto 18px auto !important;
+}
+
+.nav,
+.nav-main,
+.nav-secondary,
+.nav-no {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 18px !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    text-align: center !important;
+}
+
+.nav a,
+.nav-main a,
+.nav-secondary a {
+    display: inline-block !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+}
+
+.nav-main { margin-bottom: 12px !important; }
+.nav-secondary { margin-bottom: 18px !important; }
+
+.nav-no {
+    border-top: 1px solid rgba(255, 140, 0, 0.35) !important;
+    padding-top: 14px !important;
+    gap: 10px !important;
+}
+
+.nav-no a {
+    display: inline-block !important;
+    white-space: nowrap !important;
+    background: #ff8c00 !important;
+    color: #111111 !important;
+    border: 1px solid #cc7000 !important;
+    border-radius: 8px !important;
+    padding: 8px 13px !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    font-size: calc(0.78rem - 2px) !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.18) !important;
+}
+
+.nav-no a:hover,
+.nav-no a:focus {
+    background: #111111 !important;
+    color: #ff8c00 !important;
+    border-color: #ff8c00 !important;
+}
+
+.mission-text-readable {
+    max-width: 1180px;
+    margin: 32px auto;
+    padding: 0 12px;
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: #111111;
+}
+
+.mission-text-readable p {
+    margin: 0 0 22px 0;
+    text-align: left;
+}
+
+.final-orange-boxes {
+    max-width: 1180px;
+    margin: 40px auto 10px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.final-orange-box {
+    background: #ff8c00 !important;
+    color: #111111 !important;
+    border: 2px solid #b35f00 !important;
+    border-radius: 12px !important;
+    padding: 24px 28px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.16) !important;
+}
+
+.final-orange-box h2 {
+    color: #111111 !important;
+    margin-top: 0 !important;
+    font-weight: 900 !important;
+    border-bottom: 2px solid rgba(17,17,17,0.35) !important;
+    padding-bottom: 10px !important;
+}
+
+.final-orange-box p {
+    color: #111111 !important;
+    font-weight: 600 !important;
+    line-height: 1.75 !important;
+}
+
+@media (min-width: 900px) {
+    .final-orange-boxes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* GateBreakOpen v51: centered titles, justified text, darker orange boxes, centered 10px footer */
+main.page,
+.page {
+    max-width: 1180px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+}
+
+.hero,
+.mission-hero,
+.page > .hero {
+    text-align: center !important;
+    display: block !important;
+    max-width: 1180px !important;
+    margin: 34px auto 36px auto !important;
+    padding: 0 12px !important;
+}
+
+.hero h1,
+.mission-hero h1,
+.page h1,
+main h1 {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+}
+
+.kicker,
+.hero .kicker,
+.mission-hero .kicker {
+    display: block !important;
+    text-align: center !important;
+    letter-spacing: 0.22em !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.hero p,
+.mission-hero p {
+    text-align: center !important;
+    max-width: 900px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.card h2,
+section h2,
+.final-orange-box h2 {
+    text-align: center !important;
+}
+
+p,
+li,
+.card p,
+.card li,
+.mission-text-readable p {
+    text-align: justify !important;
+    text-justify: inter-word !important;
+}
+
+.hero p,
+footer p,
+.nav a,
+.final-orange-box h2 {
+    text-align: center !important;
+}
+
+.mission-text-readable {
+    max-width: 1180px !important;
+    margin: 34px auto !important;
+    padding: 0 12px !important;
+    font-size: 1.05rem !important;
+    line-height: 1.85 !important;
+    color: #111111 !important;
+}
+
+.mission-text-readable p {
+    margin: 0 0 24px 0 !important;
+    color: #111111 !important;
+}
+
+.final-orange-boxes {
+    max-width: 1180px !important;
+    margin: 44px auto 26px auto !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+}
+
+.final-orange-box,
+.final-orange-boxes .final-orange-box,
+.card.final-orange-box {
+    background: #c96a00 !important;
+    color: #ffffff !important;
+    border: 2px solid #8a4600 !important;
+    border-radius: 12px !important;
+    padding: 26px 30px !important;
+    box-shadow: 0 5px 14px rgba(0,0,0,0.22) !important;
+}
+
+.final-orange-box h2,
+.final-orange-boxes .final-orange-box h2 {
+    color: #ffffff !important;
+    margin-top: 0 !important;
+    margin-bottom: 16px !important;
+    font-weight: 900 !important;
+    border-bottom: 2px solid rgba(255,255,255,0.45) !important;
+    padding-bottom: 12px !important;
+}
+
+.final-orange-box p,
+.final-orange-box a,
+.final-orange-boxes .final-orange-box p,
+.final-orange-boxes .final-orange-box a {
+    color: #ffffff !important;
+    font-weight: 650 !important;
+    line-height: 1.75 !important;
+}
+
+.final-orange-box a {
+    text-decoration: underline !important;
+}
+
+@media (min-width: 900px) {
+    .final-orange-boxes {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+footer {
+    text-align: center !important;
+    font-size: 10px !important;
+    line-height: 1.45 !important;
+    padding: 18px 12px !important;
+    margin-top: 42px !important;
+}
+
+footer p,
+footer a,
+footer strong {
+    text-align: center !important;
+    font-size: 10px !important;
+    line-height: 1.45 !important;
+}
+
+
+/* GateBreakOpen v56: final clean non-cut banner */
+.banner-wrap {
+    max-width: 1180px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    overflow: visible !important;
+    background: #ffffff !important;
+}
+
+.banner {
+    display: block !important;
+    width: 100% !important;
+    max-width: 1180px !important;
+    height: auto !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    background: #ffffff !important;
+    margin: 0 auto 18px auto !important;
+}
+
+
+/* GateBreakOpen v57: GBO Project label and high-contrast project box */
+.gbo-project-orange-box {
+    background: #c96a00 !important;
+    color: #ffffff !important;
+    border: 2px solid #8a4600 !important;
+    border-radius: 12px !important;
+    padding: 24px 28px !important;
+    box-shadow: 0 5px 14px rgba(0,0,0,0.22) !important;
+}
+
+.gbo-project-orange-box h2,
+.gbo-project-orange-box h3,
+.gbo-project-orange-box p,
+.gbo-project-orange-box a,
+.gbo-project-orange-box strong {
+    color: #ffffff !important;
+}
+
+.gbo-project-orange-box a {
+    border-bottom-color: #ffffff !important;
+    text-decoration: underline !important;
 }
