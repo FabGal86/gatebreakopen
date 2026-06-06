@@ -1,816 +1,123 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>GateBreakOpen | Independent Zero-Cost AI-Assisted Publishing Space</title>
-<meta content="GateBreakOpen is an independent, zero-cost, online-only, AI-assisted, non-peer-reviewed publishing space for secondary research, conceptual papers, reviews, essays, pre-prints, and non-interventional scholarly works." name="description"/>
-<meta content="index, follow, max-image-preview:large" name="robots"/>
-<meta content="GateBreakOpen" name="author"/>
-<meta content="GateBreakOpen" name="publisher"/>
-<meta content="GateBreakOpen, open publishing, zero-cost publishing, AI-assisted publishing, non-peer-reviewed publishing, secondary research, literature reviews, conceptual papers, pre-prints, ARK identifiers, no APC" name="keywords"/>
-<link href="https://www.gatebreakopen.org/" rel="canonical"/>
-<meta content="GateBreakOpen" property="og:site_name"/>
-<meta content="GateBreakOpen | Independent Zero-Cost AI-Assisted Publishing Space" property="og:title"/>
-<meta content="GateBreakOpen is an independent, zero-cost, online-only, AI-assisted, non-peer-reviewed publishing space for secondary research, conceptual papers, reviews, essays, pre-prints, and non-interventional scholarly works." property="og:description"/>
-<meta content="website" property="og:type"/>
-<meta content="https://www.gatebreakopen.org/" property="og:url"/>
-<meta content="https://www.gatebreakopen.org/assets/gatebreakopen_banner.png" property="og:image"/>
-<meta content="en_US" property="og:locale"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="GateBreakOpen | Independent Zero-Cost AI-Assisted Publishing Space" name="twitter:title"/>
-<meta content="GateBreakOpen is an independent, zero-cost, online-only, AI-assisted, non-peer-reviewed publishing space for secondary research, conceptual papers, reviews, essays, pre-prints, and non-interventional scholarly works." name="twitter:description"/>
-<meta content="https://www.gatebreakopen.org/assets/gatebreakopen_banner.png" name="twitter:image"/>
-<script type="application/ld+json">
-[
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "GateBreakOpen",
-    "url": "https://www.gatebreakopen.org/",
-    "logo": "https://www.gatebreakopen.org/assets/gatebreakopen_banner.png",
-    "description": "Independent, zero-cost, online-only, AI-assisted, non-peer-reviewed publishing platform.",
-    "founder": {
-      "@type": "Person",
-      "name": "Fabio Galli"
-    },
-    "sameAs": [
-      "https://www.gatebreakopen.org/"
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "GateBreakOpen",
-    "url": "https://www.gatebreakopen.org/",
-    "description": "GateBreakOpen is an independent, zero-cost, online-only, AI-assisted, non-peer-reviewed publishing space for secondary research, conceptual papers, reviews, essays, pre-prints, and non-interventional scholarly works.",
-    "publisher": {
-      "@type": "Organization",
-      "name": "GateBreakOpen",
-      "url": "https://www.gatebreakopen.org/"
-    },
-    "inLanguage": "en"
-  }
-]
-    </script>
-<link href="assets/style.css" rel="stylesheet"/>
-<style id="gbo-unified-style">
-:root {
-    --gbo-#ff3d00: #ff3d00;
-    --gbo-#ff3d00-soft: rgba(255, 61, 0, 0.08);
-    --gbo-#ff3d00-line: rgba(255, 61, 0, 0.30);
-    --gbo-black: #111111;
-    --gbo-text: #222222;
-    --gbo-cream: #fffaf5;
-}
-body {
-    color: var(--gbo-text);
-}
-.site-header {
-    background: #ffffff;
-}
-.banner-wrap {
-    width: 100%;
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 0.35rem 0.8rem 0.2rem;
-    box-sizing: border-box;
-}
-.banner {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-height: 190px;
-    object-fit: contain;
-}
-.nav a {
-    font-size: 0.82rem;
-}
-.container, .page {
-    max-width: 1120px;
-    margin: 0 auto;
-    padding-left: clamp(0.9rem, 2vw, 1.4rem);
-    padding-right: clamp(0.9rem, 2vw, 1.4rem);
-}
-.hero {
-    display: block !important;
-    margin: 1rem 0 0.75rem;
-}
-.hero h1 {
-    font-size: clamp(1.55rem, 3vw, 2.25rem);
-    line-height: 1.12;
-    margin-bottom: 0.55rem;
-}
-.hero .lead, .lead {
-    font-size: 0.92rem;
-    line-height: 1.52;
-    max-width: 920px;
-}
-.kicker {
-    color: var(--gbo-#ff3d00);
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    font-size: 0.72rem;
-}
-.gbo-slider-section {
-    margin: 0.75rem 0 2rem;
-}
-.gbo-slider-shell {
-    background: var(--gbo-cream);
-    border: 1px solid var(--gbo-#ff3d00-line);
-    border-radius: 14px;
-    padding: clamp(0.62rem, 1.3vw, 0.9rem);
-    box-shadow: 0 4px 14px rgba(0,0,0,0.045);
-}
-.gbo-slider-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.8rem;
-    margin-bottom: 0.52rem;
-}
-.gbo-slider-label {
-    color: #ff3d00;
-    font-weight: 800;
-    letter-spacing: 0.035em;
-    text-transform: uppercase;
-    font-size: 0.66rem;
-}
-.gbo-slider-counter {
-    background: var(--gbo-black);
-    color: #fff;
-    font-weight: 800;
-    border-radius: 999px;
-    padding: 0.20rem 0.58rem;
-    min-width: 3.4rem;
-    text-align: center;
-    font-size: 0.72rem;
-}
-.gbo-progress {
-    height: 3px;
-    background: rgba(255,61,0,0.15);
-    border-radius: 999px;
-    overflow: hidden;
-    margin-bottom: 0.60rem;
-}
-.gbo-progress-bar {
-    height: 100%;
-    width: 1%;
-    background: var(--gbo-#ff3d00);
-    border-radius: 999px;
-    transition: width 0.25s ease;
-}
-.gbo-slide-window {
-    overflow: hidden;
-    border-radius: 12px;
-    transition: height 0.24s ease;
-}
-.gbo-slides-track {
-    display: flex;
-    align-items: flex-start;
-    transition: transform 0.32s ease;
-}
-.gbo-slide {
-    min-width: 100%;
-    box-sizing: border-box;
-    background: #ffffff;
-    border-left: 5px solid var(--gbo-#ff3d00);
-    border-radius: 12px;
-    padding: clamp(0.82rem, 1.65vw, 1.14rem);
-    color: var(--gbo-text);
-    overflow-x: auto;
-}
-.gbo-slide-kicker {
-    display: inline-block;
-    color: var(--gbo-#ff3d00);
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    margin-bottom: 0.34rem;
-    font-size: 0.64rem;
-}
-.gbo-slide h2 {
-    margin: 0 0 0.54rem;
-    font-size: clamp(1rem, 1.8vw, 1.30rem);
-    line-height: 1.18;
-    color: var(--gbo-black);
-}
-.gbo-slide h3 {
-    margin: 0.42rem 0 0.32rem;
-    font-size: clamp(0.94rem, 1.45vw, 1.08rem);
-    line-height: 1.22;
-    color: var(--gbo-black);
-}
-.gbo-slide h4 {
-    margin: 0.42rem 0 0.30rem;
-    font-size: 0.88rem;
-    line-height: 1.2;
-    color: #2b2b2b;
-}
-.gbo-slide p, .gbo-slide li, .gbo-slide td, .gbo-slide th {
-    font-size: 0.80rem;
-    line-height: 1.45;
-}
-.gbo-slide p {
-    margin: 0 0 0.48rem;
-}
-.gbo-slide ul, .gbo-slide ol {
-    margin-top: 0.35rem;
-    padding-left: 1.15rem;
-}
-.gbo-slide a {
-    color: #ff3d00;
-    font-weight: 700;
-}
-.gbo-slide table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 0.35rem;
-    background: #fff;
-}
-.gbo-slide th, .gbo-slide td {
-    border: 1px solid rgba(0,0,0,0.16);
-    padding: 0.40rem;
-    vertical-align: top;
-}
-.gbo-slide th {
-    background: var(--gbo-#ff3d00);
-    color: #fff;
-}
-.gbo-slider-controls {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.68rem;
-    margin-top: 0.68rem;
-}
-.gbo-arrow {
-    border: none;
-    background: var(--gbo-black);
-    color: #fff;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    font-size: 1.08rem;
-    line-height: 1;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.gbo-arrow:hover,
-.gbo-arrow:focus-visible {
-    transform: scale(1.04);
-    background: #333;
-    outline: 2px solid rgba(255,61,0,0.22);
-}
-.gbo-current-title {
-    min-width: 150px;
-    max-width: 420px;
-    text-align: center;
-    font-weight: 800;
-    color: #ff3d00;
-    font-size: 0.74rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.footer {
-    text-align: center;
-    padding: 1.1rem 0.8rem 1.4rem;
-    font-size: 0.78rem;
-    line-height: 1.45;
-}
-.footer p {
-    margin: 0.28rem 0;
-}
-.footer a {
-    color: #ff3d00;
-    font-weight: 700;
-    text-decoration: none;
-}
-.footer a:hover {
-    text-decoration: underline;
-}
-.policy-dot, .policy-topic {
-    color: var(--gbo-#ff3d00) !important;
-}
-.mandatory-consideration-box {
-    background: #ffffff !important;
-    color: var(--gbo-text) !important;
-    border: 1px solid var(--gbo-#ff3d00-line) !important;
-    border-left: 5px solid var(--gbo-#ff3d00) !important;
-    box-shadow: none !important;
-}
-.mandatory-consideration-box h2,
-.mandatory-consideration-box p,
-.mandatory-consideration-box li {
-    color: var(--gbo-text) !important;
-}
-@media (max-width: 720px) {
-    .banner {
-        max-height: 120px;
-    }
-    .gbo-slider-shell {
-        padding: 0.56rem;
-        border-radius: 12px;
-    }
-    .gbo-slide {
-        border-left-width: 4px;
-        border-radius: 11px;
-        padding: 0.76rem;
-    }
-    .gbo-slide p, .gbo-slide li, .gbo-slide td, .gbo-slide th {
-        font-size: 0.78rem;
-        line-height: 1.42;
-    }
-    .gbo-slider-controls {
-        gap: 0.48rem;
-    }
-    .gbo-arrow {
-        width: 31px;
-        height: 31px;
-    }
-    .gbo-current-title {
-        min-width: 100px;
-        max-width: 220px;
-        font-size: 0.70rem;
-    }
-}
-</style>
-<style id="gbo-final-global-overrides">
-:root {
-    --gbo-orange: #ff3d00 !important;
-    --gbo-orange-soft: rgba(255, 61, 0, 0.08) !important;
-    --gbo-orange-line: rgba(255, 61, 0, 0.30) !important;
-    --gbo-black: #111111 !important;
-    --gbo-text: #222222 !important;
-    --gbo-cream: #fffaf5 !important;
-    --gbo-border: #e8ded6 !important;
-}
-html, body {
-    background: #ffffff !important;
-}
-.site-header, .banner-wrap, .banner {
-    background: #ffffff !important;
-}
-.banner {
-    display: block !important;
-    width: 100% !important;
-    height: auto !important;
-    max-height: 190px !important;
-    object-fit: contain !important;
-    mix-blend-mode: normal !important;
-}
-.nav {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    gap: 0.45rem !important;
-    padding: 0.32rem 0.8rem !important;
-}
-.nav a {
-    color: #222222 !important;
-    background: transparent !important;
-    text-decoration: none !important;
-    font-size: 0.82rem !important;
-    font-weight: 700 !important;
-    padding: 0.34rem 0.58rem !important;
-    border-radius: 999px !important;
-    transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease !important;
-}
-.nav a:hover,
-.nav a:focus-visible {
-    background: var(--gbo-orange) !important;
-    color: #ffffff !important;
-    transform: translateY(-1px) !important;
-    outline: none !important;
-}
-.kicker,
-.gbo-slide-kicker,
-.policy-topic,
-.policy-dot,
-.policy-text h2,
-.embedded-full-policy h2,
-.footer a,
-.archive-table a,
-.link-table a,
-.gbo-current-title,
-.gbo-slider-label {
-    color: var(--gbo-orange) !important;
-}
-.gbo-slide,
-.section-card,
-.gbo-slider-shell,
-.note-box,
-.legal-strengthening-box,
-.embedded-full-policy,
-.mandatory-consideration-box,
-.archive-table,
-.submission-table {
-    border-color: var(--gbo-orange) !important;
-}
-.gbo-progress-bar,
-.gbo-download-complete-list-btn,
-.download-complete-list-btn,
-.link-table th,
-.archive-table th,
-.submission-table th,
-.mandatory-consideration-box {
-    background: var(--gbo-orange) !important;
-}
-.gbo-progress {
-    background: rgba(255, 61, 0, 0.15) !important;
-}
-.gbo-slider-shell,
-.section-card {
-    border: 1px solid var(--gbo-orange-line) !important;
-}
-.gbo-slide {
-    border-left: 5px solid var(--gbo-orange) !important;
-}
-.archive-table {
-    background: #fffaf5 !important;
-}
-.archive-table th,
-.submission-table th {
-    color: #ffffff !important;
-    border-color: var(--gbo-orange) !important;
-}
-.archive-table td,
-.submission-table td {
-    border-color: rgba(255, 61, 0, 0.30) !important;
-}
-.archive-table tr:nth-child(even) td,
-.submission-table tr:nth-child(even) td {
-    background: rgba(255, 61, 0, 0.08) !important;
-}
-.footer {
-    text-align: center !important;
-    padding: 1.1rem 0.8rem 1.4rem !important;
-    font-size: 0.78rem !important;
-    line-height: 1.45 !important;
-    border-top: 2px solid var(--gbo-orange) !important;
-    background: #ffffff !important;
-}
-.footer p {
-    margin: 0.28rem 0 !important;
-}
-.footer a {
-    font-weight: 700 !important;
-    text-decoration: none !important;
-}
-.footer a:hover {
-    text-decoration: underline !important;
-}
-.gbo-social-icons {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 0.55rem !important;
-    margin-top: 0.9rem !important;
-    padding-top: 0.7rem !important;
-}
-.gbo-social-icons a {
-    width: 34px !important;
-    height: 34px !important;
-    border-radius: 50% !important;
-    border: 2px solid var(--gbo-orange) !important;
-    color: var(--gbo-orange) !important;
-    background: #ffffff !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    font-weight: 900 !important;
-    font-size: 0.72rem !important;
-    line-height: 1 !important;
-    text-decoration: none !important;
-    letter-spacing: 0 !important;
-}
-.gbo-social-icons a:hover,
-.gbo-social-icons a:focus-visible {
-    background: var(--gbo-orange) !important;
-    color: #ffffff !important;
-    text-decoration: none !important;
-}
-.archive-standalone-section {
-    margin: 1rem 0 1.35rem !important;
-    background: var(--gbo-cream) !important;
-    border: 1px solid var(--gbo-orange-line) !important;
-    border-radius: 14px !important;
-    padding: clamp(0.75rem, 1.5vw, 1rem) !important;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.045) !important;
-}
-.archive-standalone-section h2 {
-    margin: 0 0 0.6rem !important;
-    color: #111111 !important;
-    border-left: 5px solid var(--gbo-orange) !important;
-    padding-left: 0.55rem !important;
-}
-@media (max-width: 720px) {
-    .banner { max-height: 120px !important; }
-    .nav a {
-        font-size: 0.74rem !important;
-        padding: 0.30rem 0.46rem !important;
-    }
-}
-</style>
-<style id="gbo-social-logo-overrides">
-.gbo-social-icons {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 0.78rem !important;
-    margin-top: 0.9rem !important;
-    padding-top: 0.7rem !important;
-}
-.gbo-social-icons a {
-    width: 34px !important;
-    height: 34px !important;
-    border: none !important;
-    border-radius: 0 !important;
-    background: transparent !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 0 !important;
-    box-sizing: border-box !important;
-    transition: transform 0.15s ease, opacity 0.15s ease !important;
-}
-.gbo-social-icons a:hover,
-.gbo-social-icons a:focus-visible {
-    background: transparent !important;
-    transform: translateY(-1px) scale(1.06) !important;
-    opacity: 0.86 !important;
-    outline: none !important;
-}
-.gbo-social-icons img {
-    display: block !important;
-    width: 34px !important;
-    height: 34px !important;
-    max-width: 34px !important;
-    max-height: 34px !important;
-    object-fit: contain !important;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GateBreakOpen | GBO Project</title>
+        <meta name="msvalidate.01" content="83D259DAD5F23A481D13293B20023128" />
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <header class="site-header">
-<div class="banner-wrap">
-<img alt="GateBreakOpen - Free Minds, Open Page" class="banner" src="assets/gatebreakopen_banner.png"/>
-</div>
-<nav aria-label="Main navigation" class="nav nav-main">
-<a href="mission-ethics.html">Mission &amp; Ethics</a>
-<a href="call-for-papers.html">Call for Papers</a>
-<a href="submit.html">Submission</a>
-<a href="type-of-articles.html">Type of Articles</a>
-<a href="areas.html">Areas</a>
-<a href="archives.html">Archives</a>
-<a href="policies.html">Policies</a>
-</nav>
-<nav aria-label="Secondary navigation" class="nav nav-secondary">
-<a href="index.html">GBO Project</a>
-<a href="contact.html">Contacts</a>
-<a href="reports.html">Reports</a>
-<a href="useful-links.html">Useful Links</a>
-</nav>
-<nav aria-label="Policy navigation" class="nav nav-no">
-<a href="ark-policy.html">ARK-Based Identification</a>
-<a href="no-apc.html">Zero-Cost Policy</a>
-<a href="no-manipulation.html">Editorial Integrity</a>
-<a href="no-favoritism.html">Equal Treatment</a>
-<a href="no-peer-review.html">Non-Peer-Reviewed Model</a>
-</nav>
+    <div class="banner-wrap">
+        <img class="banner" src="assets/gatebreakopen_banner.png" alt="GateBreakOpen - Free Minds, Open Pages">
+    </div>
+    <nav class="nav nav-main">
+        <a href="mission-ethics.html">Mission &amp; Ethics</a>
+        <a href="call-for-papers.html">Call for Papers</a>
+        <a href="submit.html">Submission</a>
+        <a href="type-of-articles.html">Type of Articles</a>
+        <a href="areas.html">Areas</a>
+        <a href="archives.html">Archives</a>
+        <a href="policies.html">Policies</a>
+    </nav>
+    <nav class="nav nav-secondary">
+        <a href="index.html">GBO Project</a>
+        <a href="contact.html">Contacts</a>
+        <a href="reports.html">Reports</a>
+    </nav>
+    <nav class="nav nav-no">
+        <a href="ark-policy.html">ARK Policy</a>
+        <a href="no-apc.html">No APC</a>
+        <a href="no-manipulation.html">No Manipulation</a>
+        <a href="no-favoritism.html">No Favoritism</a>
+        <a href="no-peer-review.html">No Peer Review</a>
+    </nav>
 </header>
+
 <main class="container">
-<section class="hero">
-<div>
-<div class="kicker">GBO Project</div>
-<h1>GBO Project</h1>
-<p class="lead">GateBreakOpen is an open, independent, zero-cost, online-only, AI-assisted, non-peer-reviewed publishing space for secondary research, reviews, conceptual papers, methodological reflections, pre-prints, essays, and other non-interventional works.</p><p class="lead"><strong>Alternative, not opposition.</strong> GateBreakOpen is not against academia, universities, journals, publishers, peer review, or traditional scholarly pathways. It offers an independent, zero-cost, online-only, non-peer-reviewed alternative dissemination space for authors and readers.</p><p class="lead"><strong>Institutional independence.</strong> GateBreakOpen is not funded by, affiliated with, endorsed by, or representative of any academic institution, university, doctoral program, degree program, study program, research group, department, or academic project within an institution.</p>
-</div>
-</section>
-<section aria-label="GBO Project sliding sections" class="gbo-slider-section">
-<div class="gbo-slider-shell">
-<div class="gbo-slider-top">
-<div class="gbo-slider-label">GBO Project</div>
-<div class="gbo-slider-counter" id="gboCounter">1/14</div>
-</div>
-<div aria-hidden="true" class="gbo-progress"><div class="gbo-progress-bar" id="gboProgress"></div></div>
-<div class="gbo-slide-window" id="gboSlideWindow">
-<div class="gbo-slides-track" id="gboTrack">
-<article aria-label="Block 1 of 14" class="gbo-slide" data-title="GateBreakOpen | Free Minds, Open Pages">
-<span class="gbo-slide-kicker">GBO Project</span>
-<h2>GateBreakOpen | Free Minds, Open Pages</h2>
-<p>GateBreakOpen is an open, independent, zero-cost, online-only, AI-assisted publishing space.</p>
-<p>It is designed for intellectual content, secondary research, literature reviews, conceptual contributions, methodological reflections, essays, pre-prints, commentaries, notes, open letters, and other non-interventional works.</p>
-<p>GateBreakOpen is not a peer-reviewed journal. It does not perform anonymous peer review, does not certify the validity of published content, and does not replace academic journals, scholarly publishers, universities, ethics committees, or institutional systems of validation.</p>
-<p>Its role is to offer a public, accessible, and transparent space where authors can make their work available while fully accepting responsibility for it.</p>
-</article>
-<article aria-label="Block 2 of 14" class="gbo-slide" data-title="A free and responsible space for dissemination">
-<span class="gbo-slide-kicker">GBO Project</span>
-<h2>A free and responsible space for dissemination</h2>
-<p>The central idea of GateBreakOpen is simple: authors should be able to make their work visible without unnecessary costs, economic barriers, or exclusive dependence on traditional publishing channels.</p>
-<p>Freedom to publish must be accompanied by responsibility, transparency, clear limits, and respect for readers.</p>
-<p>GateBreakOpen does not sell prestige, does not promise academic recognition, does not simulate peer review, and does not offer shortcuts to institutional validation.</p>
-<p>It offers a declared, zero-cost, and responsible space for the dissemination of non-interventional, secondary, conceptual, methodological, educational, and reflective content.</p>
-</article>
-<article aria-label="Block 3 of 14" class="gbo-slide" data-title="Why the project was created">
-<span class="gbo-slide-kicker">GBO Project</span>
-<h2>Why the project was created</h2>
-<p>GateBreakOpen was conceived as a response to a practical problem: many authors, independent researchers, professionals, students, practitioners, and non-affiliated contributors may have serious reflections, literature-based analyses, methodological ideas, review-style manuscripts, conceptual contributions, or pre-print materials, but do not always have access to conventional publishing channels.</p>
-<p>Traditional publication systems may involve costs, long timelines, institutional requirements, publication charges, formatting barriers, and gatekeeping mechanisms that can discourage dissemination, especially for authors outside formal academic structures.</p>
-<p>GateBreakOpen was designed as a digital space where access to publication does not depend on academic position, institutional prestige, financial capacity, or formal affiliation.</p>
-<p>This does not mean replacing academic journals, peer review, scholarly publishers, or official systems of validation. It means offering a complementary route for online dissemination based on author responsibility, transparency, basic editorial checks, and clearly declared limits.</p>
-</article>
-<article aria-label="Block 4 of 14" class="gbo-slide" data-title="Secondary and non-interventional work">
-<span class="gbo-slide-kicker">GBO Project</span>
-<h2>Secondary and non-interventional work</h2>
-<p>GateBreakOpen exists to give space to secondary research and non-interventional contributions.</p>
-<p>The platform may host literature reviews, narrative reviews, systematic reviews, scoping reviews, umbrella reviews, methodological papers, conceptual papers, theoretical papers, educational papers, professional reflections, essays, commentaries, open letters, pre-prints, evidence summaries, technical notes, monographs, book chapters, and works based on existing sources, analysis, synthesis, interpretation, method, or critical reflection.</p>
-<p>The platform does not accept primary research involving direct testing, experimentation, intervention, observation, or new data collection on human beings or animals.</p>
-<p>This choice keeps the project clearer, safer, and more coherent in its responsibility structure, while still allowing authors to publish analyses, syntheses, interpretations, and reflections based on existing sources.</p>
-</article>
-<article aria-label="Block 5 of 14" class="gbo-slide" data-title="The author as owner and manager of the work">
-<span class="gbo-slide-kicker">GBO Project</span>
-<h2>The author as owner and manager of the work</h2>
-<p>GateBreakOpen considers the author the owner, the responsible subject, and the manager of their own work.</p>
-<p>An author is not simply a person who writes. An author conceives an idea, organizes it, defines a structure, selects sources, verifies references, decides the final form, manages the public presentation of the work, and accepts responsibility for its consequences.</p>
-<p>In this perspective, the author is not a passive provider of manuscripts and is not merely a scribe. The author is the owner, curator, supervisor, and manager of the work.</p>
-<p>GateBreakOpen does not appropriate authors’ content, does not claim exclusivity over published works, and does not transform publication into a loss of control over the work.</p>
-<p>Publishing on GateBreakOpen means making a work visible and accessible. It does not mean transferring ownership, authorship, responsibility, or intellectual control to the platform.</p>
-</article>
-<article aria-label="Block 6 of 14" class="gbo-slide" data-title="The author as a manager of digital content">
-<span class="gbo-slide-kicker">GBO Project</span>
-<h2>The author as a manager of digital content</h2>
-<p>GateBreakOpen recognizes the emergence of the digital author.</p>
-<p>The digital author does not merely produce text. The digital author manages ideas, tools, sources, structures, revisions, declarations, metadata, formats, versions, and public dissemination.</p>
-<p>Writing, organization, verification, language editing, formatting, archiving, indexing, and publication are increasingly supported by digital tools.</p>
-<p>This does not reduce authorship. It changes the responsibilities of authorship.</p>
-<p>The author becomes the subject who directs the process, supervises the tools, checks the results, decides what is acceptable, and assumes public responsibility for the final version.</p>
-<p>For GateBreakOpen, the modern author is not only a writer. The author is also a content manager, a curator of sources, a supervisor of tools, and a responsible decision-maker.</p>
-</article>
-<article aria-label="Block 7 of 14" class="gbo-slide" data-title="Tools of the new digital author">
-<span class="gbo-slide-kicker">GBO Project</span>
-<h2>Tools of the new digital author</h2>
-<p>GateBreakOpen openly supports the responsible use of artificial intelligence, chatbots, and digital workflows as tools that assist the author.</p>
-<p>AI may support brainstorming, preliminary idea generation, organization of concepts, synthesis of materials, identification of connections between topics, structural suggestions, linguistic revision, translation, text organization, formatting, section structure, preliminary reference checking, metadata preparation, improvement of clarity, and technical content management.</p>
-<p>For GateBreakOpen, the use of AI is not automatically a threat to authorship. It is a tool.</p>
-<p>Like the pen, the printing press, the typewriter, the computer, databases, statistical software, and reference managers, AI belongs to the long history of tools that accompany intellectual production.</p>
-<p>AI is a change in the order of history. It is not a minor technical adjustment, but a transformation in the way human beings organize, express, refine, translate, structure, and disseminate knowledge.</p>
-</article>
-<article aria-label="Block 8 of 14" class="gbo-slide" data-title="AI amplifies only what exists">
-<span class="gbo-slide-kicker">GBO Project</span>
-<h2>AI amplifies only what exists</h2>
-<p>Intelligence remains human even when part of the process is delegated to machines. Delegating a task to a tool does not remove the intention, judgment, intellectual direction, or responsibility of the person who uses that tool.</p>
-<p>AI does not replace human intelligence. It can amplify it, but only when there is something to amplify.</p>
-<p>A tool can expand clarity, structure, speed, comparison, language, and organization. It cannot create responsibility, judgment, ethical awareness, or intellectual substance where these are absent.</p>
-<p>GateBreakOpen rejects rigid and tool-exclusive views of authorship. Authorship should not be reduced to manual writing alone, nor to dependence on only the tools, methods, and editorial rituals considered legitimate at a specific historical moment.</p>
-<p>AI does not own the idea, does not remove human judgment, and does not erase responsibility. The author remains the subject who directs the work, verifies the content, checks the sources, approves the final version, and publicly accepts responsibility for what is published.</p>
-</article>
-<article aria-label="Block 9 of 14" class="gbo-slide" data-title="Rigor and protection from pseudoscience">
-<span class="gbo-slide-kicker">GBO Project</span>
-<h2>Rigor and protection from pseudoscience</h2>
-<p>GateBreakOpen supports freedom of publication, but does not confuse freedom with absence of responsibility.</p>
-<p>The platform does not accept pseudoscientific content, fringe science presented as established knowledge, conspiracy theories, data falsification, source manipulation, plagiarism, invented references, false DOI or PMID identifiers, nonexistent citations, unauthorized images, misleading content, misrepresentation of results, unsupported clinical claims, unjustified alarmism, unvalidated therapeutic theories that may encourage dangerous behavior, defamatory content, discriminatory content, manipulative content, unlawful content, or content incompatible with the platform model.</p>
-<p>GateBreakOpen is not peer-reviewed, but this does not mean that it is a space without criteria. Publication is not automatic. Open access does not mean the right to publish anything.</p>
-<p>Every contribution must respect minimum requirements of transparency, verifiability, author responsibility, source traceability, methodological clarity, and compatibility with platform policies.</p>
-<p>GateBreakOpen may refuse, suspend, request revision, restrict, or remove content that appears misleading, unverifiable, pseudoscientific, conspiratorial, unsafe, defamatory, discriminatory, manipulative, unlawful, or incompatible with the platform model. This is not censorship; it is protection of the platform, authors, readers, and credibility of the project.</p>
-</article>
-<article aria-label="Block 10 of 14" class="gbo-slide" data-title="Responsibility and intellectual freedom">
-<span class="gbo-slide-kicker">GBO Project</span>
-<h2>Responsibility and intellectual freedom</h2>
-<p>GateBreakOpen is based on a clear cultural position: intellectual visibility should be supported by author responsibility, clarity of content, traceability of sources, transparency of declarations, and accessibility of the work.</p>
-<p>The platform supports knowledge that can circulate without payment barriers and without unnecessary economic obstacles to publication.</p>
-<p>It supports intellectual visibility that does not depend exclusively on the name of the institution to which the author belongs.</p>
-<p>It supports content that can become public through a declared, transparent, and responsible process, without pretending to replace peer review or institutional validation.</p>
-<p>GateBreakOpen does not oppose scholarly publishing, peer review, academic standards, universities, journals, or publishers when these systems operate transparently and responsibly. The platform recognizes their value and does not claim to replace them.</p>
-<p>GateBreakOpen is instead opposed to non-transparent editorial practices, unnecessary economic barriers, coercive citation, citation manipulation, informal favoritism, forced editorial alignment, and access to visibility based on closed networks rather than on the clarity, responsibility, and traceability of the work.</p>
-</article>
-<article aria-label="Block 11 of 14" class="gbo-slide" data-title="Citations, literature, and no favoritism">
-<span class="gbo-slide-kicker">GBO Project</span>
-<h2>Citations, literature, and no favoritism</h2>
-<p>GateBreakOpen supports a correct relationship with the literature, based on necessary, relevant, and justified citations.</p>
-<p>Citations should serve accuracy, attribution, context, and intellectual honesty. They should not be imposed to increase metrics, prestige, or advantage for authors, journals, publishers, institutions, or informal groups.</p>
-<p>GateBreakOpen does not impose citations to the platform, to the founder, to internal publications, or to unrelated works as a condition for publication.</p>
-<p>The platform supports transparent submission procedures. Authors should not be required to indicate privileged contacts, internal figures, or strategic reviewer names as an explicit or implicit condition for entering editorial consideration.</p>
-<p>GateBreakOpen does not require authors to know, name, or please internal figures in order to be considered. It does not sell prestige, promise academic recognition, simulate peer review, or offer shortcuts to institutional validation.</p>
-</article>
-<article aria-label="Block 12 of 14" class="gbo-slide" data-title="No APC and no publication fees">
-<span class="gbo-slide-kicker">GBO Project</span>
-<h2>No APC and no publication fees</h2>
-<p>GateBreakOpen is a zero-cost platform.</p>
-<p>It does not require submission fees, publication fees, article processing charges, APC, priority fees, visibility fees, fast-track fees, payments for increased exposure, or costs to access publication.</p>
-<p>Free access is an essential part of the project.</p>
-<p>GateBreakOpen was created to reduce economic barriers to editorial visibility, not to create new ones.</p>
-</article>
-<article aria-label="Block 13 of 14" class="gbo-slide" data-title="Not peer-reviewed, but clearly declared">
-<span class="gbo-slide-kicker">GBO Project</span>
-<h2>Not peer-reviewed, but clearly declared</h2>
-<p>GateBreakOpen does not perform formal peer review. This point must be clear to authors and readers.</p>
-<p>Publication on GateBreakOpen does not imply scientific approval, methodological validation, professional certification, institutional endorsement, or a guarantee of correctness.</p>
-<p>GateBreakOpen may perform basic editorial checks, such as verifying formal completeness, general readability, required declarations, basic format consistency, and respect for platform policies.</p>
-<p>These checks are not peer review and do not transform the content into scientifically certified material.</p>
-<p>Readers should interpret each publication as an author contribution, not as an official or validated position of the platform. They are invited to read critically, verify sources, consider declared limitations, and distinguish between reflective, educational, methodological, pre-print, review, essay, and professional contributions.</p>
-</article>
-<article aria-label="Block 14 of 14" class="gbo-slide" data-title="Ownership, traceability, updates, and summary">
-<span class="gbo-slide-kicker">GBO Project</span>
-<h2>Ownership, traceability, updates, and summary</h2>
-<p>Authors remain the owners and responsible subjects of their content. GateBreakOpen does not claim exclusive rights over published works, and authors may later submit, reuse, adapt, or republish their work elsewhere, while independently verifying the policies of third-party publishers.</p>
-<p>GateBreakOpen aims to make contributions identifiable, consultable, and organized through dedicated pages, author names, titles, publication dates, versions, annual archives, possible ARK identifiers or other adopted identification systems, essential metadata, and editorial or responsibility declarations.</p>
-<p>These elements support consultation and citability, but they do not equal peer review, formal scientific indexing, or institutional validation.</p>
-<p>GateBreakOpen may correct, update, or remove content when relevant issues emerge, including formal errors, formatting problems, incomplete information, missing declarations, attribution problems, incorrect references, policy violations, potentially harmful content, justified author requests, or the need to clarify the status of the content.</p>
-<p>The principle is simple: the author must be able to publish, but must also be responsible. The platform must be open, but not naive. Access must be free, but not without rules.</p>
-<p>GateBreakOpen is not a space where everything counts. It is a space where the author can be free and responsible. GateBreakOpen | Free Minds, Open Pages.</p>
-</article>
-</div>
-</div>
-<div class="gbo-slider-controls">
-<button aria-label="Previous block" class="gbo-arrow" id="gboPrev" type="button">‹</button>
-<div class="gbo-current-title" id="gboCurrentTitle">GateBreakOpen | Free Minds, Open Pages</div>
-<button aria-label="Next block" class="gbo-arrow" id="gboNext" type="button">›</button>
-</div>
-</div>
-</section>
+    <section class="hero">
+        <div>
+            <div class="kicker">GBO Project</div>
+            <h1>GBO Project</h1>
+            <p class="lead">
+                GateBreakOpen was created to offer an independent, zero-cost, online-only publishing space for authors who want
+                to share secondary research, reviews, conceptual papers, essays, and non-interventional scholarly work without
+                being blocked by economic barriers, institutional affiliation requirements, or traditional editorial gatekeeping.
+            </p>
+        </div>
+        <aside class="card gbo-project-orange-box">
+            <h3>Core idea</h3>
+            <p>
+                GateBreakOpen is based on a simple principle: authors should be able to disseminate responsible, literature-based
+                work in an accessible digital space, while remaining fully accountable for what they publish.
+            </p>
+        </aside>
+    </section>
+
+    <section>
+        <h2>How the project started</h2>
+        <p>
+            GateBreakOpen was conceived as a response to a practical problem: many authors, independent researchers, professionals,
+            students, practitioners, and non-affiliated contributors may have serious reflections, literature-based analyses,
+            methodological ideas, or review-style manuscripts, but do not always have access to conventional publishing channels.
+            Traditional publication systems may involve costs, long timelines, institutional filters, publication charges,
+            formatting barriers, and gatekeeping mechanisms that can discourage dissemination, especially for authors outside
+            formal academic structures.
+        </p>
+        <p>
+            The project was designed as a digital publishing circuit where access does not depend on academic position,
+            institutional prestige, financial capacity, or affiliation. GateBreakOpen does not replace scientific journals, peer review,
+            academic publishers, or official systems of validation. Instead, it offers a complementary route for online dissemination
+            based on author responsibility, transparency, basic editorial checks, and clear limits.
+        </p>
+    </section>
+
+    <section>
+        <h2>Why GateBreakOpen exists</h2>
+        <p>
+            GateBreakOpen exists to give space to secondary research and non-interventional scholarly contributions, including literature
+            reviews, systematic reviews, scoping reviews, umbrella reviews, methodological papers, conceptual papers, commentaries,
+            essays, evidence summaries, and other work based on already existing information. The platform does not accept primary
+            research involving direct testing, experimentation, intervention, observation, or new data collection on humans or animals.
+        </p>
+        <p>
+            This choice keeps the platform focused, safer, and clearer in its responsibility structure. By accepting only
+            secondary research and non-interventional contributions, GateBreakOpen avoids the ethical, clinical, experimental, and regulatory
+            complexity of human-subject or animal-subject research, while still allowing authors to publish analyses, syntheses,
+            interpretations, and reflections based on existing sources.
+        </p>
+    </section>
+
+    <section>
+        <h2>AI-assisted and chatbot-workflow-assisted model</h2>
+        <p>
+            GateBreakOpen uses AI-assisted and chatbot-workflow-assisted procedures to support organization, formatting, language review,
+            consistency checks, reference checking, metadata preparation, and identification of possible formal or bibliographic issues.
+            These tools are supportive only. They do not perform peer review, scientific validation, legal verification, methodological
+            certification, or professional endorsement.
+        </p>
+        <p>
+            The human author remains responsible for every claim, citation, interpretation, conclusion, image, table, reference, and
+            ethical or legal aspect of the manuscript. GateBreakOpen may support the process, but it does not take ownership of the author’s
+            intellectual position and does not certify the reliability of the published content.
+        </p>
+    </section>
+
+    <section class="notice gbo-project-orange-box">
+        <h2>GateBreakOpen in one sentence</h2>
+        <p>
+            GateBreakOpen is an independent, zero-cost, online-only, AI-assisted publishing space for responsible secondary research
+            and non-interventional scholarly contributions.
+        </p>
+        <p><a href="policies.html">Read the full Publication Disclaimer</a></p>
+    </section>
 </main>
 <footer class="footer">
-<p>© 2026 Author(s). Published by GateBreakOpen. Licensed under CC BY-NC-ND 4.0 International.</p>
-<p><strong>Conceived, designed, and developed by Fabio Galli.</strong></p>
-<p><strong>Hosted with GitHub Pages.</strong></p>
-<p><strong>GBO is ARK registered: 78326.</strong></p>
-<p><strong>Useful Links:</strong>
-<a href="index.html">GBO Project</a> ·
-        <a href="mission-ethics.html">Mission &amp; Ethics</a> ·
-        <a href="call-for-papers.html">Call for Papers</a> ·
-        <a href="submit.html">Submission</a> ·
-        <a href="type-of-articles.html">Type of Articles</a> ·
-        <a href="areas.html">Areas</a> ·
-        <a href="archives.html">Archives</a> ·
-        <a href="policies.html">Policies</a> ·
-        <a href="contact.html">Contacts</a> ·
-        <a href="reports.html">Reports</a> ·
-        <a href="useful-links.html">Useful Links</a> ·
-        <a href="ark-policy.html">ARK-Based Identification</a> ·
-        <a href="no-apc.html">Zero-Cost Policy</a> ·
-        <a href="no-doi.html">ARK-Based Identification</a> ·
-        <a href="no-manipulation.html">Editorial Integrity</a> ·
-        <a href="no-favoritism.html">Equal Treatment</a> ·
-        <a href="no-peer-review.html">Non-Peer-Reviewed Model</a>
-</p>
-<div aria-label="Social links" class="gbo-social-icons">
-<a aria-label="LinkedIn" href="#" title="LinkedIn"><img alt="LinkedIn logo" src="assets/social/linkedin.png"/></a>
-<a aria-label="Instagram" href="#" title="Instagram"><img alt="Instagram logo" src="assets/social/instagram.png"/></a>
-<a aria-label="Facebook" href="#" title="Facebook"><img alt="Facebook logo" src="assets/social/facebook.png"/></a>
-<a aria-label="X" href="#" title="X"><img alt="X logo" src="assets/social/x.png"/></a>
-<a aria-label="WhatsApp" href="#" title="WhatsApp"><img alt="WhatsApp logo" src="assets/social/whatsapp.png"/></a>
-<a aria-label="Telegram" href="#" title="Telegram"><img alt="Telegram logo" src="assets/social/telegram.png"/></a>
-<a aria-label="Threads" href="#" title="Threads"><img alt="Threads logo" src="assets/social/threads.png"/></a>
-<a aria-label="Bluesky" href="#" title="Bluesky"><img alt="Bluesky logo" src="assets/social/bluesky.png"/></a>
-</div>
+    <p>© 2026 Author(s). Published by GateBreakOpen. Licensed under CC BY-NC-ND 4.0 International.</p>
+    <p>GateBreakOpen is online-only, zero-cost, AI-assisted, and not peer-reviewed.</p>
+    <p><strong>Conceived, designed, and developed by Fabio Galli with Chatbot-Workflow support.</strong></p>
+    <p><strong>Hosted with GitHub Pages.</strong></p>
 </footer>
-<script id="gbo-unified-slider-script">
-(function() {
-    const track = document.getElementById('gboTrack');
-    const counter = document.getElementById('gboCounter');
-    const progress = document.getElementById('gboProgress');
-    const title = document.getElementById('gboCurrentTitle');
-    const prev = document.getElementById('gboPrev');
-    const next = document.getElementById('gboNext');
-    const windowEl = document.getElementById('gboSlideWindow');
-    const slides = Array.from(document.querySelectorAll('.gbo-slide'));
-    const total = slides.length;
-    let current = 0;
-
-    function resizeWindow() {
-        if (!windowEl || !slides[current]) return;
-        windowEl.style.height = slides[current].offsetHeight + 'px';
-    }
-
-    function updateSlider(index) {
-        current = (index + total) % total;
-        track.style.transform = 'translateX(-' + (current * 100) + '%)';
-        counter.textContent = (current + 1) + '/' + total;
-        progress.style.width = (((current + 1) / total) * 100) + '%';
-        title.textContent = slides[current].dataset.title || 'Block ' + (current + 1);
-        resizeWindow();
-    }
-
-    if (!track || !counter || !progress || !title || !prev || !next || !slides.length) return;
-
-    prev.addEventListener('click', () => updateSlider(current - 1));
-    next.addEventListener('click', () => updateSlider(current + 1));
-    document.addEventListener('keydown', (event) => {
-        if (event.key === 'ArrowLeft') updateSlider(current - 1);
-        if (event.key === 'ArrowRight') updateSlider(current + 1);
-    });
-    window.addEventListener('resize', resizeWindow);
-    if (document.fonts && document.fonts.ready) {
-        document.fonts.ready.then(resizeWindow);
-    }
-    updateSlider(0);
-})();
-</script>
 </body>
 </html>
