@@ -1,12 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>2026 Archive | GateBreakOpen</title>
-<link rel="stylesheet" href="../../assets/style.css">
-
-
+<link href="../../assets/style.css" rel="stylesheet"/>
 <style>
 .archive-table-wrap {
     width: 100%;
@@ -19,30 +18,30 @@
     background: #fff7ed;
     font-size: 0.80rem;
     line-height: 1.30;
-    border: 1px solid #c96a00;
+    border: 1px solid #ff3d00;
 }
 .archive-table th {
-    background: #c96a00;
+    background: #ff3d00;
     color: #ffffff;
     text-align: left;
     padding: 7px 8px;
-    border: 1px solid #8a4600;
+    border: 1px solid #ff3d00;
     font-size: 0.76rem;
     font-weight: 800;
     letter-spacing: 0.02em;
 }
 .archive-table td {
     padding: 7px 8px;
-    border: 1px solid #e3a14d;
+    border: 1px solid rgba(255, 61, 0, 0.35);
     vertical-align: top;
     font-size: 0.80rem;
     background: #fff7ed;
 }
 .archive-table tr:nth-child(even) td {
-    background: #ffe9c9;
+    background: rgba(255, 61, 0, 0.08);
 }
 .archive-table a {
-    color: #8a4600;
+    color: #ff3d00;
     font-weight: 800;
     text-decoration: underline;
 }
@@ -54,7 +53,7 @@
 }
 .archive-light-link {
     display: inline;
-    color: #8a4600;
+    color: #ff3d00;
     font-size: 0.86rem;
     font-weight: 800;
     text-decoration: underline;
@@ -66,46 +65,116 @@
 }
 </style>
 
+<style id="gbo-internal-index-hover-fix">
+:root {
+    --gbo-orange: #ff3d00;
+    --gbo-orange-soft: rgba(255, 61, 0, 0.08);
+    --gbo-orange-line: rgba(255, 61, 0, 0.35);
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.45rem;
+    padding: 0.32rem 0.8rem;
+}
+
+.nav a {
+    color: #222222;
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 700;
+    padding: 0.34rem 0.72rem;
+    border-radius: 999px;
+    transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+
+.nav a:hover,
+.nav a:focus {
+    background: var(--gbo-orange);
+    color: #ffffff;
+    border-radius: 999px;
+}
+
+.nav-no a {
+    border: 1px solid var(--gbo-orange);
+    color: #222222;
+    background: #ffffff;
+    border-radius: 999px;
+}
+
+.nav-no a:hover,
+.nav-no a:focus {
+    background: var(--gbo-orange);
+    color: #ffffff;
+    border-color: var(--gbo-orange);
+}
+
+.archive-table {
+    border: 1px solid var(--gbo-orange);
+}
+
+.archive-table th {
+    background: var(--gbo-orange);
+    border: 1px solid var(--gbo-orange);
+}
+
+.archive-table td {
+    border: 1px solid var(--gbo-orange-line);
+}
+
+.archive-table a,
+.archive-light-link {
+    color: var(--gbo-orange);
+}
+
+.archive-table a:hover,
+.archive-light-link:hover {
+    color: var(--gbo-orange);
+    text-decoration: underline;
+}
+</style>
 </head>
 <body>
 <header class="site-header">
-    <div class="banner-wrap"><a href="../../index.html"><img class="banner" src="../../assets/gatebreakopen_banner.png" alt="GateBreakOpen - Free Minds, Open Pages"></a></div>
-    <nav class="nav nav-main">
-        <a href="../../mission-ethics.html">Mission &amp; Ethics</a>
-        <a href="../../call-for-papers.html">Call for Papers</a>
-        <a href="../../submit.html">Submission</a>
-        <a href="../../type-of-articles.html">Type of Articles</a>
-        <a href="../../areas.html">Areas</a>
-        <a href="../../archives.html">Archives</a>
-        <a href="../../policies.html">Policies</a>
-    </nav>
-    <nav class="nav nav-secondary">
-        <a href="../../index.html">GBO Project</a>
-        <a href="../../contact.html">Contacts</a>
-        <a href="../../reports.html">Reports</a>
-    </nav>
-    <nav class="nav nav-no">
-        <a href="../../ark-policy.html">ARK Policy</a>
-        <a href="../../no-apc.html">No APC</a>
-        <a href="../../no-manipulation.html">No Manipulation</a>
-        <a href="../../no-favoritism.html">No Favoritism</a>
-        <a href="../../no-peer-review.html">No Peer Review</a>
-    </nav>
+<div class="banner-wrap"><a href="../../index.html"><img alt="GateBreakOpen - Free Minds, Open Pages" class="banner" src="../../assets/gatebreakopen_banner.png"/></a></div>
+<nav class="nav nav-main">
+<a href="../../mission-ethics.html">Mission &amp; Ethics</a>
+<a href="../../call-for-papers.html">Call for Papers</a>
+<a href="../../submit.html">Submission</a>
+<a href="../../type-of-articles.html">Type of Articles</a>
+<a href="../../areas.html">Areas</a>
+<a href="../../archives.html">Archives</a>
+<a href="../../policies.html">Policies</a>
+</nav>
+<nav class="nav nav-secondary">
+<a href="../../index.html">GBO Project</a>
+<a href="../../contact.html">Contacts</a>
+<a href="../../reports.html">Reports</a>
+</nav>
+<nav class="nav nav-no">
+<a href="../../ark-policy.html">ARK-Based Identification</a>
+<a href="../../no-apc.html">Zero-Cost Policy</a>
+<a href="../../no-manipulation.html">Editorial Integrity</a>
+<a href="../../no-favoritism.html">Equal Treatment</a>
+<a href="../../no-peer-review.html">Non-Peer-Reviewed Model</a>
+</nav>
 </header>
 <main class="container">
 <h1>2026 Archive</h1>
 <p class="lead">GateBreakOpen annual collection for 2026.</p>
 <div class="archive-table-wrap"><table class="archive-table">
 <thead><tr><th>Year</th><th>Month</th><th>Author</th><th>Title</th><th>ARK Record</th><th>Download PDF</th></tr></thead>
-<tbody><tr><td>2026</td><td>May</td><td>Fabio Galli</td><td>Welcome Letter</td><td><a href="gbo01welcomeletter.html">View</a></td><td><a href="Welcome_Letter_GateBreakOpen.pdf" download>PDF</a></td></tr></tbody>
+<tbody><tr><td>2026</td><td>May</td><td>Fabio Galli</td><td>Welcome Letter</td><td><a href="gbo01welcomeletter.html">View</a></td><td><a download="" href="Welcome_Letter_GateBreakOpen.pdf">PDF</a></td></tr></tbody>
 </table></div>
 <p class="archive-light-nav"><a class="archive-light-link" href="../../archives.html">Return to Archives</a></p>
 </main>
 <footer class="footer">
-    <p>© 2026 Author(s). Published by GateBreakOpen. Licensed under CC BY-NC-ND 4.0 International.</p>
-    <p>GateBreakOpen is online-only, zero-cost, AI-assisted, and not peer-reviewed.</p>
-    <p><strong>Conceived, designed, and developed by Fabio Galli with Chatbot-Workflow support.</strong></p>
-    <p><strong>Hosted with GitHub Pages.</strong></p>
+<p>© 2026 Author(s). Published by GateBreakOpen. Licensed under CC BY-NC-ND 4.0 International.</p>
+<p>GateBreakOpen is online-only, zero-cost, AI-assisted, and not peer-reviewed.</p>
+<p><strong>Conceived, designed, and developed by Fabio Galli with Chatbot-Workflow support.</strong></p>
+<p><strong>Hosted with GitHub Pages.</strong></p>
 </footer>
 </body>
 </html>

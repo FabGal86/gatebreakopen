@@ -1,306 +1,682 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Areas | GateBreakOpen</title>
-    <link rel="stylesheet" href="assets/style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Areas | GateBreakOpen</title>
+<meta content="GateBreakOpen areas: secondary, conceptual, educational, methodological, theoretical, humanities, health, social sciences, data, AI, technology, and non-interventional scholarly work." name="description"/>
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<meta content="GateBreakOpen" name="author"/>
+<meta content="GateBreakOpen" name="publisher"/>
+<link href="https://www.gatebreakopen.org/areas.html" rel="canonical"/>
+<meta content="GateBreakOpen" property="og:site_name"/>
+<meta content="Areas | GateBreakOpen" property="og:title"/>
+<meta content="GateBreakOpen areas of secondary, conceptual, educational, methodological, theoretical, humanities, and non-interventional scholarly work." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="https://www.gatebreakopen.org/areas.html" property="og:url"/>
+<meta content="https://www.gatebreakopen.org/assets/gatebreakopen_banner.png" property="og:image"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Areas | GateBreakOpen" name="twitter:title"/>
+<meta content="GateBreakOpen areas of secondary, conceptual, educational, methodological, theoretical, humanities, and non-interventional scholarly work." name="twitter:description"/>
+<meta content="https://www.gatebreakopen.org/assets/gatebreakopen_banner.png" name="twitter:image"/>
+<link href="assets/style.css" rel="stylesheet"/>
+<style id="gbo-unified-style">
+:root {
+    --gbo-#ff3d00: #ff3d00;
+    --gbo-#ff3d00-soft: rgba(255, 61, 0, 0.08);
+    --gbo-#ff3d00-line: rgba(255, 61, 0, 0.30);
+    --gbo-black: #111111;
+    --gbo-text: #222222;
+    --gbo-cream: #fffaf5;
+}
+body { color: var(--gbo-text); }
+.site-header { background: #ffffff; }
+.banner-wrap {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0.35rem 0.8rem 0.2rem;
+    box-sizing: border-box;
+}
+.banner {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 190px;
+    object-fit: contain;
+}
+.nav a { font-size: 0.82rem; }
+.container, .page {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-left: clamp(0.9rem, 2vw, 1.4rem);
+    padding-right: clamp(0.9rem, 2vw, 1.4rem);
+}
+.hero {
+    display: block !important;
+    margin: 1rem 0 0.75rem;
+    text-align: center;
+}
+.hero h1 {
+    font-size: clamp(1.55rem, 3vw, 2.25rem);
+    line-height: 1.12;
+    margin-bottom: 0.55rem;
+}
+.hero .lead, .lead {
+    font-size: 0.92rem;
+    line-height: 1.52;
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.kicker {
+    color: var(--gbo-#ff3d00);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 0.72rem;
+}
+.gbo-download-complete-list-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.15rem 0 1.45rem;
+    width: 100%;
+}
+.gbo-download-complete-list-btn {
+    display: inline-block;
+    background: var(--gbo-#ff3d00);
+    color: #ffffff !important;
+    font-size: 0.82rem;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 0.55rem 0.95rem;
+    border-radius: 999px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.10);
+    transition: transform 0.15s ease, background 0.15s ease;
+    text-align: center;
+}
+.gbo-download-complete-list-btn:hover,
+.gbo-download-complete-list-btn:focus-visible {
+    background: #e63600;
+    transform: translateY(-1px);
+    outline: 2px solid rgba(255,61,0,0.20);
+}
+.gbo-slider-section { margin: 0.75rem 0 2rem; }
+.gbo-slider-shell {
+    background: var(--gbo-cream);
+    border: 1px solid var(--gbo-#ff3d00-line);
+    border-radius: 14px;
+    padding: clamp(0.62rem, 1.3vw, 0.9rem);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.045);
+}
+.gbo-slider-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+    margin-bottom: 0.52rem;
+}
+.gbo-slider-label {
+    color: #ff3d00;
+    font-weight: 800;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+    font-size: 0.66rem;
+}
+.gbo-slider-counter {
+    background: var(--gbo-black);
+    color: #fff;
+    font-weight: 800;
+    border-radius: 999px;
+    padding: 0.20rem 0.58rem;
+    min-width: 3.4rem;
+    text-align: center;
+    font-size: 0.72rem;
+}
+.gbo-progress {
+    height: 3px;
+    background: rgba(255,61,0,0.15);
+    border-radius: 999px;
+    overflow: hidden;
+    margin-bottom: 0.60rem;
+}
+.gbo-progress-bar {
+    height: 100%;
+    width: 1%;
+    background: var(--gbo-#ff3d00);
+    border-radius: 999px;
+    transition: width 0.25s ease;
+}
+.gbo-slide-window {
+    overflow: hidden;
+    border-radius: 12px;
+    transition: height 0.24s ease;
+}
+.gbo-slides-track {
+    display: flex;
+    align-items: flex-start;
+    transition: transform 0.32s ease;
+}
+.gbo-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    background: #ffffff;
+    border-left: 5px solid var(--gbo-#ff3d00);
+    border-radius: 12px;
+    padding: clamp(0.82rem, 1.65vw, 1.14rem);
+    color: var(--gbo-text);
+    overflow-x: auto;
+}
+.gbo-slide-kicker {
+    display: inline-block;
+    color: var(--gbo-#ff3d00);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.34rem;
+    font-size: 0.64rem;
+}
+.gbo-slide h2 {
+    margin: 0 0 0.54rem;
+    font-size: clamp(1rem, 1.8vw, 1.30rem);
+    line-height: 1.18;
+    color: var(--gbo-black);
+}
+.gbo-slide p, .gbo-slide li {
+    font-size: 0.80rem;
+    line-height: 1.45;
+}
+.gbo-slide p { margin: 0 0 0.48rem; }
+.gbo-slide ul { margin-top: 0.35rem; padding-left: 1.15rem; }
+.gbo-area-name { font-weight: 800; color: #111; }
+.gbo-slider-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.68rem;
+    margin-top: 0.68rem;
+}
+.gbo-arrow {
+    border: none;
+    background: var(--gbo-black);
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 1.08rem;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gbo-current-title {
+    min-width: 150px;
+    max-width: 420px;
+    text-align: center;
+    font-weight: 800;
+    color: #ff3d00;
+    font-size: 0.74rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.footer {
+    text-align: center;
+    padding: 1.1rem 0.8rem 1.4rem;
+    font-size: 0.78rem;
+    line-height: 1.45;
+}
+.footer p { margin: 0.28rem 0; }
+.footer a { color: #ff3d00; font-weight: 700; text-decoration: none; }
+.footer a:hover { text-decoration: underline; }
+@media (max-width: 720px) {
+    .banner { max-height: 120px; }
+    .gbo-slider-shell { padding: 0.56rem; border-radius: 12px; }
+    .gbo-slide { border-left-width: 4px; border-radius: 11px; padding: 0.76rem; }
+    .gbo-slide p, .gbo-slide li { font-size: 0.78rem; line-height: 1.42; }
+    .gbo-arrow { width: 31px; height: 31px; }
+    .gbo-current-title { min-width: 100px; max-width: 220px; font-size: 0.70rem; }
+}
+</style>
+<style id="gbo-final-global-overrides">
+:root {
+    --gbo-orange: #ff3d00 !important;
+    --gbo-orange-soft: rgba(255, 61, 0, 0.08) !important;
+    --gbo-orange-line: rgba(255, 61, 0, 0.30) !important;
+    --gbo-black: #111111 !important;
+    --gbo-text: #222222 !important;
+    --gbo-cream: #fffaf5 !important;
+    --gbo-border: #e8ded6 !important;
+}
+html, body {
+    background: #ffffff !important;
+}
+.site-header, .banner-wrap, .banner {
+    background: #ffffff !important;
+}
+.banner {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 190px !important;
+    object-fit: contain !important;
+    mix-blend-mode: normal !important;
+}
+.nav {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 0.45rem !important;
+    padding: 0.32rem 0.8rem !important;
+}
+.nav a {
+    color: #222222 !important;
+    background: transparent !important;
+    text-decoration: none !important;
+    font-size: 0.82rem !important;
+    font-weight: 700 !important;
+    padding: 0.34rem 0.58rem !important;
+    border-radius: 999px !important;
+    transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease !important;
+}
+.nav a:hover,
+.nav a:focus-visible {
+    background: var(--gbo-orange) !important;
+    color: #ffffff !important;
+    transform: translateY(-1px) !important;
+    outline: none !important;
+}
+.kicker,
+.gbo-slide-kicker,
+.policy-topic,
+.policy-dot,
+.policy-text h2,
+.embedded-full-policy h2,
+.footer a,
+.archive-table a,
+.link-table a,
+.gbo-current-title,
+.gbo-slider-label {
+    color: var(--gbo-orange) !important;
+}
+.gbo-slide,
+.section-card,
+.gbo-slider-shell,
+.note-box,
+.legal-strengthening-box,
+.embedded-full-policy,
+.mandatory-consideration-box,
+.archive-table,
+.submission-table {
+    border-color: var(--gbo-orange) !important;
+}
+.gbo-progress-bar,
+.gbo-download-complete-list-btn,
+.download-complete-list-btn,
+.link-table th,
+.archive-table th,
+.submission-table th,
+.mandatory-consideration-box {
+    background: var(--gbo-orange) !important;
+}
+.gbo-progress {
+    background: rgba(255, 61, 0, 0.15) !important;
+}
+.gbo-slider-shell,
+.section-card {
+    border: 1px solid var(--gbo-orange-line) !important;
+}
+.gbo-slide {
+    border-left: 5px solid var(--gbo-orange) !important;
+}
+.archive-table {
+    background: #fffaf5 !important;
+}
+.archive-table th,
+.submission-table th {
+    color: #ffffff !important;
+    border-color: var(--gbo-orange) !important;
+}
+.archive-table td,
+.submission-table td {
+    border-color: rgba(255, 61, 0, 0.30) !important;
+}
+.archive-table tr:nth-child(even) td,
+.submission-table tr:nth-child(even) td {
+    background: rgba(255, 61, 0, 0.08) !important;
+}
+.footer {
+    text-align: center !important;
+    padding: 1.1rem 0.8rem 1.4rem !important;
+    font-size: 0.78rem !important;
+    line-height: 1.45 !important;
+    border-top: 2px solid var(--gbo-orange) !important;
+    background: #ffffff !important;
+}
+.footer p {
+    margin: 0.28rem 0 !important;
+}
+.footer a {
+    font-weight: 700 !important;
+    text-decoration: none !important;
+}
+.footer a:hover {
+    text-decoration: underline !important;
+}
+.gbo-social-icons {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0.55rem !important;
+    margin-top: 0.9rem !important;
+    padding-top: 0.7rem !important;
+}
+.gbo-social-icons a {
+    width: 34px !important;
+    height: 34px !important;
+    border-radius: 50% !important;
+    border: 2px solid var(--gbo-orange) !important;
+    color: var(--gbo-orange) !important;
+    background: #ffffff !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: 900 !important;
+    font-size: 0.72rem !important;
+    line-height: 1 !important;
+    text-decoration: none !important;
+    letter-spacing: 0 !important;
+}
+.gbo-social-icons a:hover,
+.gbo-social-icons a:focus-visible {
+    background: var(--gbo-orange) !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+.archive-standalone-section {
+    margin: 1rem 0 1.35rem !important;
+    background: var(--gbo-cream) !important;
+    border: 1px solid var(--gbo-orange-line) !important;
+    border-radius: 14px !important;
+    padding: clamp(0.75rem, 1.5vw, 1rem) !important;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.045) !important;
+}
+.archive-standalone-section h2 {
+    margin: 0 0 0.6rem !important;
+    color: #111111 !important;
+    border-left: 5px solid var(--gbo-orange) !important;
+    padding-left: 0.55rem !important;
+}
+@media (max-width: 720px) {
+    .banner { max-height: 120px !important; }
+    .nav a {
+        font-size: 0.74rem !important;
+        padding: 0.30rem 0.46rem !important;
+    }
+}
+</style>
+<style id="gbo-social-logo-overrides">
+.gbo-social-icons {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0.78rem !important;
+    margin-top: 0.9rem !important;
+    padding-top: 0.7rem !important;
+}
+.gbo-social-icons a {
+    width: 34px !important;
+    height: 34px !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    transition: transform 0.15s ease, opacity 0.15s ease !important;
+}
+.gbo-social-icons a:hover,
+.gbo-social-icons a:focus-visible {
+    background: transparent !important;
+    transform: translateY(-1px) scale(1.06) !important;
+    opacity: 0.86 !important;
+    outline: none !important;
+}
+.gbo-social-icons img {
+    display: block !important;
+    width: 34px !important;
+    height: 34px !important;
+    max-width: 34px !important;
+    max-height: 34px !important;
+    object-fit: contain !important;
+}
+</style>
 </head>
 <body>
 <header class="site-header">
-    <div class="banner-wrap">
-        <img class="banner" src="assets/gatebreakopen_banner.png" alt="GateBreakOpen - Free Minds, Open Pages">
-    </div>
-    <nav class="nav nav-main">
-        <a href="mission-ethics.html">Mission &amp; Ethics</a>
-        <a href="call-for-papers.html">Call for Papers</a>
-        <a href="submit.html">Submission</a>
-        <a href="type-of-articles.html">Type of Articles</a>
-        <a href="areas.html">Areas</a>
-        <a href="archives.html">Archives</a>
-        <a href="policies.html">Policies</a>
-    </nav>
-    <nav class="nav nav-secondary">
-        <a href="index.html">GBO Project</a>
-        <a href="contact.html">Contacts</a>
-        <a href="reports.html">Reports</a>
-    </nav>
-    <nav class="nav nav-no">
-        <a href="ark-policy.html">ARK Policy</a>
-        <a href="no-apc.html">No APC</a>
-        <a href="no-manipulation.html">No Manipulation</a>
-        <a href="no-favoritism.html">No Favoritism</a>
-        <a href="no-peer-review.html">No Peer Review</a>
-    </nav>
-</header>
-
-<main class="container policy-text">
-    <h1>Areas</h1>
-
-    <p class="lead">
-        GateBreakOpen is open to multiple areas of secondary, conceptual, educational, methodological, theoretical, and non-interventional
-        scholarly work. The areas below indicate the main fields accepted by the platform. All submissions must respect the GateBreakOpen Policy,
-        must not involve prohibited primary human or animal research, and must not contain unlawful, discriminatory, violent, extremist, or proselytizing content.
-    </p>
-
-    <div class="article-list">
-        <div class="article">
-            <h3>Health, Medicine, and Healthcare</h3>
-            <p>Secondary research, reviews, commentary, education, methodology, policy analysis, ethics, healthcare systems, public health, clinical literature, and evidence synthesis without primary human or animal research.</p>
-        </div>
-        <div class="article">
-            <h3>Nursing and Allied Health Professions</h3>
-            <p>Literature-based work on nursing practice, rehabilitation, physiotherapy, occupational therapy, speech therapy, professional education, care models, and healthcare teamwork.</p>
-        </div>
-        <div class="article">
-            <h3>Psychology and Behavioral Sciences</h3>
-            <p>Reviews, theory, methods, ethics, education, and conceptual work on behavior, cognition, mental processes, assessment, and psychological literature without collecting new participant data.</p>
-        </div>
-        <div class="article">
-            <h3>Education and Pedagogy</h3>
-            <p>Articles on teaching, learning, curriculum, assessment, educational methods, digital education, training, and educational theory using existing literature or non-interventional approaches.</p>
-        </div>
-        <div class="article">
-            <h3>Social Sciences</h3>
-            <p>Secondary and conceptual work on society, institutions, culture, organizations, inequalities, communication, social behavior, and public issues.</p>
-        </div>
-        <div class="article">
-            <h3>Sociology and Anthropology</h3>
-            <p>Literature-based, theoretical, historical, and critical work on social structures, communities, cultures, practices, identity, and human organization.</p>
-        </div>
-        <div class="article">
-            <h3>Economics, Management, and Organization</h3>
-            <p>Reviews and conceptual papers on management, leadership, work organization, decision-making, business models, economic behavior, labor, innovation, and organizational processes.</p>
-        </div>
-        <div class="article">
-            <h3>Law, Policy, and Governance</h3>
-            <p>Analyses of legal frameworks, public policy, governance, regulation, rights, institutions, compliance, and ethical or social implications of rules and decisions.</p>
-        </div>
-        <div class="article">
-            <h3>Ethics and Bioethics</h3>
-            <p>Conceptual, philosophical, literature-based, and policy work on ethical issues, responsibility, consent, autonomy, justice, integrity, research ethics, and professional conduct.</p>
-        </div>
-        <div class="article">
-            <h3>Philosophy</h3>
-            <p>Theoretical and analytical articles on knowledge, ethics, logic, meaning, science, mind, society, values, and philosophical traditions.</p>
-        </div>
-        <div class="article">
-            <h3>History and Historical Studies</h3>
-            <p>Historical analyses of events, movements, institutions, ideas, authors, documents, professional fields, or scientific and cultural developments.</p>
-        </div>
-        <div class="article">
-            <h3>Communication, Media, and Journalism</h3>
-            <p>Articles on media systems, digital communication, public discourse, misinformation, publishing, writing, journalism, and communication ethics.</p>
-        </div>
-        <div class="article">
-            <h3>Information Science and Libraries</h3>
-            <p>Reviews and analyses on information organization, documentation, bibliometrics, repositories, archives, scholarly communication, and knowledge access.</p>
-        </div>
-        <div class="article">
-            <h3>Data Science and Statistics</h3>
-            <p>Conceptual, methodological, educational, and secondary work on data analysis, statistical methods, visualization, modeling, evidence synthesis, and interpretation.</p>
-        </div>
-        <div class="article">
-            <h3>Artificial Intelligence and Digital Technologies</h3>
-            <p>Reviews, educational articles, methods, ethics, policy analysis, and conceptual work on AI, chatbots, automation, software, digital tools, and human-computer interaction.</p>
-        </div>
-        <div class="article">
-            <h3>Computer Science and Software Methods</h3>
-            <p>Methodological and technical notes on software, programming workflows, algorithms, computational methods, applications, and digital systems without harmful or unlawful content.</p>
-        </div>
-        <div class="article">
-            <h3>Engineering and Applied Technologies</h3>
-            <p>Literature-based and conceptual work on engineering methods, systems, design, technology applications, sustainability, risk, and innovation.</p>
-        </div>
-        <div class="article">
-            <h3>Environmental Studies and Sustainability</h3>
-            <p>Reviews and analyses on climate, environment, sustainability, conservation, resources, public policy, ecological issues, and environmental ethics using existing sources.</p>
-        </div>
-        <div class="article">
-            <h3>Agriculture and Food Systems</h3>
-            <p>Secondary research and policy or technical analysis on food systems, agriculture, production, sustainability, safety, and innovation without prohibited animal experimentation.</p>
-        </div>
-        <div class="article">
-            <h3>Architecture, Design, and Urban Studies</h3>
-            <p>Conceptual, historical, social, technical, and policy work on buildings, cities, design, planning, space, infrastructure, and urban life.</p>
-        </div>
-        <div class="article">
-            <h3>Arts, Humanities, and Cultural Studies</h3>
-            <p>Essays, reviews, criticism, and conceptual work on literature, arts, culture, aesthetics, heritage, language, media, and human expression.</p>
-        </div>
-        <div class="article">
-            <h3>Linguistics and Language Studies</h3>
-            <p>Theoretical, educational, historical, and literature-based work on language, communication, translation, discourse, terminology, and writing.</p>
-        </div>
-        <div class="article">
-            <h3>Religious Studies</h3>
-            <p>Critical, historical, sociological, philosophical, or literature-based analysis of religion and belief systems, allowed only when non-proselytizing, non-inciting, lawful, scholarly, and non-denigrating.</p>
-        </div>
-        <div class="article">
-            <h3>Political Science and International Relations</h3>
-            <p>Analyses of institutions, governance, policy, political theory, international systems, conflict, diplomacy, public decision-making, and social movements using lawful scholarly approaches.</p>
-        </div>
-        <div class="article">
-            <h3>Security, Risk, and Safety Studies</h3>
-            <p>Secondary and policy work on safety, risk, preparedness, governance, prevention, resilience, and security topics, excluding propaganda, operational harm, extremism, or unlawful instruction.</p>
-        </div>
-        <div class="article">
-            <h3>Open Science and Scholarly Publishing</h3>
-            <p>Articles on publishing models, editorial practices, research communication, academic evaluation, repositories, peer review, dissemination, and access to knowledge.</p>
-        </div>
-        <div class="article">
-            <h3>Interdisciplinary Studies</h3>
-            <p>Work combining multiple fields, methods, theories, or perspectives, provided that the article remains secondary, non-interventional, lawful, and compliant with GateBreakOpen policy.</p>
-        </div>
-    
-        <div class="area">
-            <h3>Life Sciences and Environment</h3>
-            <p>Literature-based, theoretical, methodological, educational, and non-interventional contributions related to biological sciences, environmental studies, ecology, sustainability, ecosystems, and life systems. GateBreakOpen does not accept primary human or animal experimentation.</p>
-        </div>
-
-
-        <div class="area">
-            <h3>Marketing and Digital Marketing</h3>
-            <p>Contributions related to marketing theory, consumer behavior, branding, communication strategies, digital marketing, online platforms, social media communication, and analytical or educational perspectives.</p>
-        </div>
-
-
-        <div class="area">
-            <h3>Business, Economics, and Finance</h3>
-            <p>Contributions related to business studies, management, economics, financial systems, markets, accounting, entrepreneurship, organizational analysis, and economic or financial theory.</p>
-        </div>
-
-
-        <div class="area">
-            <h3>Public Health and Health Promotion</h3>
-            <p>Non-interventional and literature-based contributions related to public health, prevention, health promotion, community health, healthcare education, and policy-oriented health analysis.</p>
-        </div>
-
-
-        <div class="area">
-            <h3>Digital Health and Health Technologies</h3>
-            <p>Contributions related to digital health, health technologies, telemedicine, health informatics, AI in healthcare, digital tools, and educational or methodological perspectives.</p>
-        </div>
-
-
-        <div class="area">
-            <h3>Biotechnology and Biomedical Sciences</h3>
-            <p>Theoretical, conceptual, educational, methodological, review-based, or secondary contributions related to biotechnology, biomedical sciences, and biomedical innovation, without primary laboratory or human/animal experimentation.</p>
-        </div>
-
-
-        <div class="area">
-            <h3>Pharmaceutical Sciences</h3>
-            <p>Contributions related to pharmaceutical sciences, drug policy, medication education, pharmacological literature reviews, methodology, and secondary or conceptual analyses.</p>
-        </div>
-
-
-        <div class="area">
-            <h3>Veterinary and Animal Studies</h3>
-            <p>Literature-based, educational, theoretical, or policy-oriented contributions related to veterinary topics and animal studies, without primary animal experimentation or direct animal research.</p>
-        </div>
-
-
-        <div class="area">
-            <h3>Sports Science and Physical Activity</h3>
-            <p>Contributions related to sports science, exercise, physical activity, training theory, health promotion, education, performance concepts, and non-interventional or literature-based analysis.</p>
-        </div>
-
-
-        <div class="area">
-            <h3>Nutrition and Food Sciences</h3>
-            <p>Contributions related to nutrition, food sciences, dietary education, food systems, public health nutrition, and literature-based or conceptual analysis.</p>
-        </div>
-
-
-        <div class="area">
-            <h3>Tourism, Hospitality, and Cultural Heritage</h3>
-            <p>Contributions related to tourism, hospitality, cultural heritage, destination studies, travel systems, cultural promotion, and educational or policy-oriented analysis.</p>
-        </div>
-
-
-        <div class="area">
-            <h3>Entrepreneurship and Innovation</h3>
-            <p>Contributions related to entrepreneurship, innovation, start-ups, business models, creative enterprise, organizational innovation, and conceptual or methodological frameworks.</p>
-        </div>
-
-
-        <div class="area">
-            <h3>Accounting and Auditing</h3>
-            <p>Contributions related to accounting, auditing, reporting, financial documentation, governance, professional standards, and educational or analytical perspectives.</p>
-        </div>
-
-
-        <div class="area">
-            <h3>Human Resources and Work Psychology</h3>
-            <p>Contributions related to human resources, organizational behavior, work psychology, leadership, workplace wellbeing, training, professional development, and management education.</p>
-        </div>
-
-
-        <div class="area">
-            <h3>Logistics, Operations, and Supply Chain</h3>
-            <p>Contributions related to logistics, operations management, supply chains, production systems, service processes, organizational flows, and methodological or educational models.</p>
-        </div>
-
-
-        <div class="area">
-            <h3>Public Administration</h3>
-            <p>Contributions related to public administration, public management, governance, institutional processes, public services, administrative reform, and policy implementation.</p>
-        </div>
-
-
-        <div class="area">
-            <h3>International Development and Cooperation</h3>
-            <p>Contributions related to international development, cooperation, global challenges, humanitarian systems, development policy, sustainability, and interdisciplinary analysis.</p>
-        </div>
-
-
-        <div class="area">
-            <h3>Migration, Diversity, and Gender Studies</h3>
-            <p>Contributions related to migration, diversity, inclusion, gender studies, social equity, cultural analysis, and scholarly non-discriminatory perspectives.</p>
-        </div>
-
-
-        <div class="area">
-            <h3>Criminology, Security, and Forensic Studies</h3>
-            <p>Contributions related to criminology, security, risk, forensic studies, safety systems, crime prevention, legal-social analysis, and educational or review-based work.</p>
-        </div>
-
-
-        <div class="area">
-            <h3>Geography, Territory, and Urban Systems</h3>
-            <p>Contributions related to geography, territorial studies, spatial systems, urban analysis, regional development, mobility, land use, and socio-environmental planning.</p>
-        </div>
-
-
-        <div class="area">
-            <h3>Energy, Climate, and Sustainability Studies</h3>
-            <p>Contributions related to energy systems, climate change, sustainability, environmental policy, resilience, ecological transition, and interdisciplinary analysis.</p>
-        </div>
-
-
-        <div class="area">
-            <h3>Emergency, Disaster Risk, and Resilience Studies</h3>
-            <p>Contributions related to emergency management, disaster risk reduction, resilience, safety planning, crisis systems, preparedness, and recovery frameworks.</p>
-        </div>
-
+<div class="banner-wrap">
+<img alt="GateBreakOpen - Free Minds, Open Page" class="banner" src="assets/gatebreakopen_banner.png"/>
 </div>
-
-    <section class="card">
-        <h2>Scope Note for All Areas</h2>
-        <p>
-            All areas are interpreted within GateBreakOpen's non-interventional scope. GateBreakOpen accepts literature-based,
-            theoretical, conceptual, methodological, educational, reflective, policy-oriented, and secondary-data contributions.
-            GateBreakOpen does not accept primary human or animal research.
-        </p>
-    </section>
-
+<nav aria-label="Main navigation" class="nav nav-main">
+<a href="mission-ethics.html">Mission &amp; Ethics</a>
+<a href="call-for-papers.html">Call for Papers</a>
+<a href="submit.html">Submission</a>
+<a href="type-of-articles.html">Type of Articles</a>
+<a href="areas.html">Areas</a>
+<a href="archives.html">Archives</a>
+<a href="policies.html">Policies</a>
+</nav>
+<nav aria-label="Secondary navigation" class="nav nav-secondary">
+<a href="index.html">GBO Project</a>
+<a href="contact.html">Contacts</a>
+<a href="reports.html">Reports</a>
+<a href="useful-links.html">Useful Links</a>
+</nav>
+<nav aria-label="Policy navigation" class="nav nav-no">
+<a href="ark-policy.html">ARK-Based Identification</a>
+<a href="no-apc.html">Zero-Cost Policy</a>
+<a href="no-manipulation.html">Editorial Integrity</a>
+<a href="no-favoritism.html">Equal Treatment</a>
+<a href="no-peer-review.html">Non-Peer-Reviewed Model</a>
+</nav>
+</header>
+<main class="container">
+<section class="hero">
+<div>
+<div class="kicker">Areas</div>
+<h1>Areas</h1>
+<p class="lead">GateBreakOpen is open to multiple areas of secondary, conceptual, educational, methodological, theoretical, and non-interventional scholarly work. The areas below indicate the main fields accepted by the platform. All submissions must respect the GateBreakOpen Policy, must not involve prohibited primary human or animal research, and must not contain unlawful, discriminatory, violent, extremist, or proselytizing content.</p>
+</div>
+</section>
+<div class="gbo-download-complete-list-wrap">
+<a class="gbo-download-complete-list-btn" download="" href="docs/GateBreakOpen_Complete_Areas_List.pdf">
+            Download Complete List
+        </a>
+</div>
+<section aria-label="Areas sliding sections" class="gbo-slider-section">
+<div class="gbo-slider-shell">
+<div class="gbo-slider-top">
+<div class="gbo-slider-label">Areas</div>
+<div class="gbo-slider-counter" id="gboCounter">1/9</div>
+</div>
+<div aria-hidden="true" class="gbo-progress"><div class="gbo-progress-bar" id="gboProgress"></div></div>
+<div class="gbo-slide-window" id="gboSlideWindow">
+<div class="gbo-slides-track" id="gboTrack">
+<article aria-label="Block 1 of 9" class="gbo-slide" data-title="Health, Healthcare, and Biomedical Areas">
+<span class="gbo-slide-kicker">Areas</span>
+<h2>Health, Healthcare, and Biomedical Areas</h2>
+<ul>
+<li><span class="gbo-area-name">Health, Medicine, and Healthcare:</span> Secondary research, reviews, commentary, education, methodology, policy analysis, ethics, healthcare systems, public health, clinical literature, and evidence synthesis without primary human or animal research.</li>
+<li><span class="gbo-area-name">Nursing and Allied Health Professions:</span> Literature-based work on nursing practice, rehabilitation, physiotherapy, occupational therapy, speech therapy, professional education, care models, and healthcare teamwork.</li>
+<li><span class="gbo-area-name">Psychology and Behavioral Sciences:</span> Reviews, theory, methods, ethics, education, and conceptual work on behavior, cognition, mental processes, assessment, and psychological literature without collecting new participant data.</li>
+</ul>
+</article>
+<article aria-label="Block 2 of 9" class="gbo-slide" data-title="Education, Social Sciences, and Human Development">
+<span class="gbo-slide-kicker">Areas</span>
+<h2>Education, Social Sciences, and Human Development</h2>
+<ul>
+<li><span class="gbo-area-name">Education and Pedagogy:</span> Articles on teaching, learning, curriculum, assessment, educational methods, digital education, training, and educational theory using existing literature or non-interventional approaches.</li>
+<li><span class="gbo-area-name">Social Sciences:</span> Secondary and conceptual work on society, institutions, culture, organizations, inequalities, communication, social behavior, and public issues.</li>
+<li><span class="gbo-area-name">Sociology and Anthropology:</span> Literature-based, theoretical, historical, and critical work on social structures, communities, cultures, practices, identity, and human organization.</li>
+</ul>
+</article>
+<article aria-label="Block 3 of 9" class="gbo-slide" data-title="Business, Economics, Law, and Governance">
+<span class="gbo-slide-kicker">Areas</span>
+<h2>Business, Economics, Law, and Governance</h2>
+<ul>
+<li><span class="gbo-area-name">Economics, Management, and Organization:</span> Reviews and conceptual papers on management, leadership, work organization, decision-making, business models, economic behavior, labor, innovation, and organizational processes.</li>
+<li><span class="gbo-area-name">Law, Policy, and Governance:</span> Analyses of legal frameworks, public policy, governance, regulation, rights, institutions, compliance, and ethical or social implications of rules and decisions.</li>
+<li><span class="gbo-area-name">Political Science and International Relations:</span> Analyses of institutions, governance, policy, political theory, international systems, conflict, diplomacy, public decision-making, and social movements using lawful scholarly approaches.</li>
+</ul>
+</article>
+<article aria-label="Block 4 of 9" class="gbo-slide" data-title="Ethics, Philosophy, Religion, and Humanistic Thought">
+<span class="gbo-slide-kicker">Areas</span>
+<h2>Ethics, Philosophy, Religion, and Humanistic Thought</h2>
+<ul>
+<li><span class="gbo-area-name">Ethics and Bioethics:</span> Conceptual, philosophical, literature-based, and policy work on ethical issues, responsibility, consent, autonomy, justice, integrity, research ethics, and professional conduct.</li>
+<li><span class="gbo-area-name">Philosophy:</span> Theoretical and analytical articles on knowledge, ethics, logic, meaning, science, mind, society, values, and philosophical traditions.</li>
+<li><span class="gbo-area-name">Religious Studies:</span> Critical, historical, sociological, philosophical, or literature-based analysis of religion and belief systems, allowed only when non-proselytizing, non-inciting, lawful, scholarly, and non-denigrating.</li>
+<li><span class="gbo-area-name">Humanities:</span> Secondary, conceptual, historical, theoretical, educational, and critical work related to human culture, thought, language, memory, interpretation, texts, values, artistic expression, and intellectual traditions.</li>
+</ul>
+</article>
+<article aria-label="Block 5 of 9" class="gbo-slide" data-title="History, Arts, Language, and Cultural Heritage">
+<span class="gbo-slide-kicker">Areas</span>
+<h2>History, Arts, Language, and Cultural Heritage</h2>
+<ul>
+<li><span class="gbo-area-name">History and Historical Studies:</span> Historical analyses of events, movements, institutions, ideas, authors, documents, professional fields, or scientific and cultural developments.</li>
+<li><span class="gbo-area-name">Arts, Humanities, and Cultural Studies:</span> Essays, reviews, criticism, and conceptual work on literature, arts, culture, aesthetics, heritage, language, media, and human expression.</li>
+<li><span class="gbo-area-name">Linguistics and Language Studies:</span> Theoretical, educational, historical, and literature-based work on language, communication, translation, discourse, terminology, and writing.</li>
+<li><span class="gbo-area-name">Literature and Literary Studies:</span> Critical, historical, theoretical, comparative, educational, and interpretive work on literary texts, authors, genres, movements, narratives, poetics, and literary cultures.</li>
+<li><span class="gbo-area-name">Classical Studies and Ancient Civilizations:</span> Literature-based, historical, philological, cultural, philosophical, and educational work on classical antiquity, ancient texts, languages, societies, traditions, and civilizations.</li>
+<li><span class="gbo-area-name">Cultural Heritage and Museum Studies:</span> Secondary, historical, educational, methodological, and policy-oriented work on cultural heritage, museums, archives, preservation, public history, memory, and heritage communication.</li>
+<li><span class="gbo-area-name">Art History and Visual Culture:</span> Critical, historical, theoretical, and educational work on artworks, visual traditions, images, aesthetics, iconography, artistic movements, and visual culture.</li>
+</ul>
+</article>
+<article aria-label="Block 6 of 9" class="gbo-slide" data-title="Communication, Media, Publishing, and Information">
+<span class="gbo-slide-kicker">Areas</span>
+<h2>Communication, Media, Publishing, and Information</h2>
+<ul>
+<li><span class="gbo-area-name">Communication, Media, and Journalism:</span> Articles on media systems, digital communication, public discourse, misinformation, publishing, writing, journalism, and communication ethics.</li>
+<li><span class="gbo-area-name">Information Science and Libraries:</span> Reviews and analyses on information organization, documentation, bibliometrics, repositories, archives, scholarly communication, and knowledge access.</li>
+<li><span class="gbo-area-name">Open Science and Scholarly Publishing:</span> Articles on publishing models, editorial practices, research communication, academic evaluation, repositories, peer review, dissemination, and access to knowledge.</li>
+</ul>
+</article>
+<article aria-label="Block 7 of 9" class="gbo-slide" data-title="Data, Statistics, AI, and Computer Science">
+<span class="gbo-slide-kicker">Areas</span>
+<h2>Data, Statistics, AI, and Computer Science</h2>
+<ul>
+<li><span class="gbo-area-name">Data Science and Statistics:</span> Conceptual, methodological, educational, and secondary work on data analysis, statistical methods, visualization, modeling, evidence synthesis, and interpretation.</li>
+<li><span class="gbo-area-name">Artificial Intelligence and Digital Technologies:</span> Reviews, educational articles, methods, ethics, policy analysis, and conceptual work on AI, chatbots, automation, software, digital tools, and human-computer interaction.</li>
+<li><span class="gbo-area-name">Computer Science and Software Methods:</span> Methodological and technical notes on software, programming workflows, algorithms, computational methods, applications, and digital systems without harmful or unlawful content.</li>
+</ul>
+</article>
+<article aria-label="Block 8 of 9" class="gbo-slide" data-title="Engineering, Technology, Environment, and Sustainability">
+<span class="gbo-slide-kicker">Areas</span>
+<h2>Engineering, Technology, Environment, and Sustainability</h2>
+<ul>
+<li><span class="gbo-area-name">Engineering and Applied Technologies:</span> Literature-based and conceptual work on engineering methods, systems, design, technology applications, sustainability, risk, and innovation.</li>
+<li><span class="gbo-area-name">Environmental Studies and Sustainability:</span> Reviews and analyses on climate, environment, sustainability, conservation, resources, public policy, ecological issues, and environmental ethics using existing sources.</li>
+<li><span class="gbo-area-name">Agriculture and Food Systems:</span> Secondary research and policy or technical analysis on food systems, agriculture, production, sustainability, safety, and innovation without prohibited animal experimentation.</li>
+<li><span class="gbo-area-name">Architecture, Design, and Urban Studies:</span> Conceptual, historical, social, technical, and policy work on buildings, cities, design, planning, space, infrastructure, and urban life.</li>
+</ul>
+</article>
+<article aria-label="Block 9 of 9" class="gbo-slide" data-title="Security, Risk, Safety, and Interdisciplinary Work">
+<span class="gbo-slide-kicker">Areas</span>
+<h2>Security, Risk, Safety, and Interdisciplinary Work</h2>
+<ul>
+<li><span class="gbo-area-name">Security, Risk, and Safety Studies:</span> Secondary and policy work on safety, risk, preparedness, governance, prevention, resilience, and security topics, excluding propaganda, operational harm, extremism, or unlawful instruction.</li>
+<li><span class="gbo-area-name">Interdisciplinary Studies:</span> Work combining multiple fields, methods, theories, or perspectives, provided that the article remains secondary, non-interventional, lawful, and compliant with GateBreakOpen policy.</li>
+</ul>
+</article>
+</div>
+</div>
+<div class="gbo-slider-controls">
+<button aria-label="Previous block" class="gbo-arrow" id="gboPrev" type="button">‹</button>
+<div class="gbo-current-title" id="gboCurrentTitle">Areas</div>
+<button aria-label="Next block" class="gbo-arrow" id="gboNext" type="button">›</button>
+</div>
+</div>
+</section>
 </main>
 <footer class="footer">
-    <p>© 2026 Author(s). Published by GateBreakOpen. Licensed under CC BY-NC-ND 4.0 International.</p>
-    <p>GateBreakOpen is online-only, zero-cost, AI-assisted, and not peer-reviewed.</p>
-    <p><strong>Conceived, designed, and developed by Fabio Galli with Chatbot-Workflow support.</strong></p>
-    <p><strong>Hosted with GitHub Pages.</strong></p>
+<p>© 2026 Author(s). Published by GateBreakOpen. Licensed under CC BY-NC-ND 4.0 International.</p>
+<p><strong>Conceived, designed, and developed by Fabio Galli.</strong></p>
+<p><strong>Hosted with GitHub Pages.</strong></p>
+<p><strong>GBO is ARK registered: 78326.</strong></p>
+<p><strong>Useful Links:</strong>
+<a href="index.html">GBO Project</a> ·
+        <a href="mission-ethics.html">Mission &amp; Ethics</a> ·
+        <a href="call-for-papers.html">Call for Papers</a> ·
+        <a href="submit.html">Submission</a> ·
+        <a href="type-of-articles.html">Type of Articles</a> ·
+        <a href="areas.html">Areas</a> ·
+        <a href="archives.html">Archives</a> ·
+        <a href="policies.html">Policies</a> ·
+        <a href="contact.html">Contacts</a> ·
+        <a href="reports.html">Reports</a> ·
+        <a href="useful-links.html">Useful Links</a> ·
+        <a href="ark-policy.html">ARK-Based Identification</a> ·
+        <a href="no-apc.html">Zero-Cost Policy</a> ·
+        <a href="no-doi.html">ARK-Based Identification</a> ·
+        <a href="no-manipulation.html">Editorial Integrity</a> ·
+        <a href="no-favoritism.html">Equal Treatment</a> ·
+        <a href="no-peer-review.html">Non-Peer-Reviewed Model</a>
+</p>
+<div aria-label="Social links" class="gbo-social-icons">
+<a aria-label="LinkedIn" href="#" title="LinkedIn"><img alt="LinkedIn logo" src="assets/social/linkedin.png"/></a>
+<a aria-label="Instagram" href="#" title="Instagram"><img alt="Instagram logo" src="assets/social/instagram.png"/></a>
+<a aria-label="Facebook" href="#" title="Facebook"><img alt="Facebook logo" src="assets/social/facebook.png"/></a>
+<a aria-label="X" href="#" title="X"><img alt="X logo" src="assets/social/x.png"/></a>
+<a aria-label="WhatsApp" href="#" title="WhatsApp"><img alt="WhatsApp logo" src="assets/social/whatsapp.png"/></a>
+<a aria-label="Telegram" href="#" title="Telegram"><img alt="Telegram logo" src="assets/social/telegram.png"/></a>
+<a aria-label="Threads" href="#" title="Threads"><img alt="Threads logo" src="assets/social/threads.png"/></a>
+<a aria-label="Bluesky" href="#" title="Bluesky"><img alt="Bluesky logo" src="assets/social/bluesky.png"/></a>
+</div>
 </footer>
+<script id="gbo-unified-slider-script">
+(function() {
+    const track = document.getElementById('gboTrack');
+    const counter = document.getElementById('gboCounter');
+    const progress = document.getElementById('gboProgress');
+    const title = document.getElementById('gboCurrentTitle');
+    const prev = document.getElementById('gboPrev');
+    const next = document.getElementById('gboNext');
+    const windowEl = document.getElementById('gboSlideWindow');
+    const slides = Array.from(document.querySelectorAll('.gbo-slide'));
+    const total = slides.length;
+    let current = 0;
+
+    function resizeWindow() {
+        if (!windowEl || !slides[current]) return;
+        windowEl.style.height = slides[current].offsetHeight + 'px';
+    }
+
+    function updateSlider(index) {
+        current = (index + total) % total;
+        track.style.transform = 'translateX(-' + (current * 100) + '%)';
+        counter.textContent = (current + 1) + '/' + total;
+        progress.style.width = (((current + 1) / total) * 100) + '%';
+        title.textContent = slides[current].dataset.title || 'Block ' + (current + 1);
+        resizeWindow();
+    }
+
+    if (!track || !counter || !progress || !title || !prev || !next || !slides.length) return;
+    prev.addEventListener('click', () => updateSlider(current - 1));
+    next.addEventListener('click', () => updateSlider(current + 1));
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowLeft') updateSlider(current - 1);
+        if (event.key === 'ArrowRight') updateSlider(current + 1);
+    });
+    window.addEventListener('resize', resizeWindow);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(resizeWindow);
+    updateSlider(0);
+})();
+</script>
 </body>
 </html>

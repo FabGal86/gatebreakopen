@@ -1,4 +1,41 @@
+# GateBreakOpen robots.txt
+# Public indexing policy for https://www.gatebreakopen.org/
+
 User-agent: *
 Allow: /
+
+# Static public pages
+Allow: /index.html
+Allow: /mission-ethics.html
+Allow: /call-for-papers.html
+Allow: /submit.html
+Allow: /type-of-articles.html
+Allow: /areas.html
+Allow: /archives.html
+Allow: /policies.html
+Allow: /ark-policy.html
+Allow: /no-apc.html
+Allow: /no-doi.html
+Allow: /no-manipulation.html
+Allow: /no-favoritism.html
+Allow: /no-peer-review.html
+Allow: /contact.html
+Allow: /reports.html
+Allow: /useful-links.html
+
+# Archive and ARK landing pages
+Allow: /archives/
+Allow: /archives/2026/
+Allow: /archives/2026/index.html
+Allow: /archives/2026/gbo01welcomeletter.html
+Allow: /archives/2026/Welcome_Letter_GateBreakOpen.pdf
+
+# Avoid indexing accidental technical or duplicate paths if they ever appear
+Disallow: /private/
+Disallow: /drafts/
+Disallow: /tmp/
+Disallow: /backup/
+Disallow: /old/
+Disallow: /*?*
 
 Sitemap: https://www.gatebreakopen.org/sitemap.xml
