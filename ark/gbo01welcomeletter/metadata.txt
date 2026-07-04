@@ -1,0 +1,15 @@
+title: Welcome Letter to Authors and Colleagues
+publisher: GateBreakOpen
+founder: Fabio Galli
+publication_year: 2026
+resource_type: Welcome letter / platform document
+language: English
+license: CC BY-NC-ND 4.0 International
+ark: ark:/78326/gbo01welcomeletter
+display_persistent_identifier: https://n2t.net/ark:/78326/gbo01welcomeletter
+local_persistent_metadata_page: https://www.gatebreakopen.org/ark/gbo01welcomeletter/
+pdf_url: https://www.gatebreakopen.org/archives/2026/Welcome_Letter_GateBreakOpen.pdf
+metadata_json: https://www.gatebreakopen.org/ark/gbo01welcomeletter/metadata.json
+metadata_txt: https://www.gatebreakopen.org/ark/gbo01welcomeletter/metadata.txt
+platform_model: Online-only, zero-cost, AI-assisted, and not peer-reviewed
+identifier_policy: ARK-based persistent identification; no DOI assignment

@@ -1,215 +1,130 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Welcome Letter | GateBreakOpen ARK Landing Page</title>
-<link href="../../assets/style.css" rel="stylesheet"/>
-<style>
-.ark-card {
-    background: #fff7ed;
-    border: 1px solid #ff3d00;
-    border-radius: 10px;
-    padding: 18px 20px;
-    margin: 22px 0;
-}
-.metadata-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 18px 0 24px;
-    background: #fff7ed;
-    font-size: 0.82rem;
-    line-height: 1.32;
-}
-.metadata-table th {
-    width: 28%;
-    background: #ff3d00;
-    color: #ffffff;
-    text-align: left;
-    padding: 7px 8px;
-    border: 1px solid #ff3d00;
-    font-size: 0.76rem;
-}
-.metadata-table td {
-    padding: 7px 8px;
-    border: 1px solid rgba(255, 61, 0, 0.35);
-    vertical-align: top;
-    background: #fff7ed;
-    font-size: 0.82rem;
-}
-.metadata-table a {
-    color: #ff3d00;
-    font-weight: 800;
-    text-decoration: underline;
-}
-.download-button {
-    display: inline-block;
-    background: #ff3d00;
-    color: #ffffff !important;
-    font-weight: 800;
-    padding: 9px 14px;
-    border-radius: 7px;
-    text-decoration: none;
-    margin-top: 8px;
-    font-size: 0.86rem;
-}
-.persistent-note {
-    font-size: 0.90rem;
-    color: #333333;
-}
-.archive-light-link {
-    display: inline;
-    color: #ff3d00;
-    font-size: 0.86rem;
-    font-weight: 800;
-    text-decoration: underline;
-}
-.archive-light-nav {
-    margin-top: 18px;
-    font-size: 0.86rem;
-    line-height: 1.45;
-}
-</style>
-
-<style id="gbo-ark-page-orange-hover-fix">
-:root {
-    --gbo-orange: #ff3d00;
-    --gbo-orange-soft: rgba(255, 61, 0, 0.08);
-    --gbo-orange-line: rgba(255, 61, 0, 0.35);
-}
-
-.nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.45rem;
-    padding: 0.32rem 0.8rem;
-}
-
-.nav a {
-    color: #222222;
-    text-decoration: none;
-    font-size: 0.82rem;
-    font-weight: 700;
-    padding: 0.34rem 0.72rem;
-    border-radius: 999px;
-    transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
-}
-
-.nav a:hover,
-.nav a:focus {
-    background: var(--gbo-orange);
-    color: #ffffff;
-    border-radius: 999px;
-}
-
-.nav-no a {
-    border: 1px solid var(--gbo-orange);
-    color: #222222;
-    background: #ffffff;
-    border-radius: 999px;
-}
-
-.nav-no a:hover,
-.nav-no a:focus {
-    background: var(--gbo-orange);
-    color: #ffffff;
-    border-color: var(--gbo-orange);
-}
-
-.ark-card {
-    border: 1px solid var(--gbo-orange);
-}
-
-.metadata-table th {
-    background: var(--gbo-orange);
-    border: 1px solid var(--gbo-orange);
-}
-
-.metadata-table td {
-    border: 1px solid var(--gbo-orange-line);
-}
-
-.metadata-table a,
-.archive-light-link {
-    color: var(--gbo-orange);
-}
-
-.metadata-table a:hover,
-.archive-light-link:hover {
-    color: var(--gbo-orange);
-    text-decoration: underline;
-}
-
-.download-button {
-    background: var(--gbo-orange);
-    color: #ffffff !important;
-    border-radius: 999px;
-}
-
-.download-button:hover,
-.download-button:focus {
-    background: var(--gbo-orange);
-    color: #ffffff !important;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Letter to Authors and Colleagues | GateBreakOpen</title>
+    <meta name="description" content="GateBreakOpen Welcome Letter to Authors and Colleagues, with persistent identifier, PDF, and metadata access.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.gatebreakopen.org/archives/2026/gbo01welcomeletter.html">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #111;
+            background: #ffffff;
+        }
+        main {
+            max-width: 980px;
+            margin: 42px auto;
+            padding: 0 24px 54px 24px;
+        }
+        .kicker {
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: #ff3c00;
+            font-weight: 800;
+            font-size: 0.78rem;
+            margin-bottom: 12px;
+        }
+        h1 {
+            text-align: center;
+            margin: 0 0 14px 0;
+        }
+        .intro {
+            max-width: 820px;
+            margin: 0 auto 30px auto;
+            text-align: center;
+            line-height: 1.65;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 28px 0;
+            font-size: 1rem;
+        }
+        th, td {
+            border: 1px solid #ffc2ad;
+            padding: 12px 14px;
+            vertical-align: top;
+            text-align: left;
+        }
+        th {
+            width: 32%;
+            background: #ff3c00;
+            color: #ffffff;
+            font-weight: 800;
+        }
+        td {
+            background: #fff7f2;
+        }
+        a {
+            color: #ff3c00;
+            font-weight: 800;
+        }
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            justify-content: center;
+            margin-top: 26px;
+        }
+        .button {
+            display: inline-block;
+            border: 2px solid #ff3c00;
+            background: #ff3c00;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 10px;
+            padding: 12px 18px;
+            font-weight: 900;
+        }
+        .button.secondary {
+            background: #ffffff;
+            color: #ff3c00;
+        }
+        footer {
+            text-align: center;
+            font-size: 10px;
+            line-height: 1.45;
+            padding: 18px 12px;
+            margin-top: 42px;
+        }
+        footer p {
+            text-align: center;
+            font-size: 10px;
+            line-height: 1.45;
+        }
+    </style>
 </head>
 <body>
-<header class="site-header">
-<div class="banner-wrap"><a href="../../index.html"><img alt="GateBreakOpen - Free Minds, Open Pages" class="banner" src="../../assets/gatebreakopen_banner.png"/></a></div>
-<nav class="nav nav-main">
-<a href="../../mission-ethics.html">Mission &amp; Ethics</a>
-<a href="../../call-for-papers.html">Call for Papers</a>
-<a href="../../submit.html">Submission</a>
-<a href="../../type-of-articles.html">Type of Articles</a>
-<a href="../../areas.html">Areas</a>
-<a href="../../archives.html">Archives</a>
-<a href="../../policies.html">Policies</a>
-</nav>
-<nav class="nav nav-secondary">
-<a href="../../index.html">GBO Project</a>
-<a href="../../contact.html">Contacts</a>
-<a href="../../reports.html">Reports</a>
-</nav>
-<nav class="nav nav-no">
-<a href="../../ark-policy.html">ARK-Based Identification</a>
-<a href="../../no-apc.html">Zero-Cost Policy</a>
-<a href="../../no-manipulation.html">Editorial Integrity</a>
-<a href="../../no-favoritism.html">Equal Treatment</a>
-<a href="../../no-peer-review.html">Non-Peer-Reviewed Model</a>
-</nav>
-</header>
-<main class="container">
-<h1>Welcome Letter</h1>
-<p class="lead">Persistent ARK landing page for the GateBreakOpen Welcome Letter to Authors and Colleagues.</p>
-<section class="ark-card">
-<h2>Publication Record</h2>
-<table class="metadata-table"><tbody>
-<tr><th>Year</th><td>2026</td></tr>
-<tr><th>Month</th><td>May</td></tr>
-<tr><th>Author</th><td>Fabio Galli</td></tr>
-<tr><th>Title</th><td>Welcome Letter to Authors and Colleagues</td></tr>
-<tr><th>Platform</th><td>GateBreakOpen - Free Minds, Open Pages</td></tr>
-<tr><th>License</th><td>CC BY-NC-ND 4.0 International</td></tr>
-<tr><th>ARK</th><td><code>ark:/78326/gbo01welcomeletter</code></td></tr>
-<tr><th>Persistent identifier</th><td><a href="https://n2t.net/ark:/78326/gbo01welcomeletter">https://n2t.net/ark:/78326/gbo01welcomeletter</a></td></tr>
-<tr><th>Landing page URL</th><td><a href="https://www.gatebreakopen.org/archives/2026/gbo01welcomeletter.html">https://www.gatebreakopen.org/archives/2026/gbo01welcomeletter.html</a></td></tr>
-<tr><th>PDF URL</th><td><a href="https://www.gatebreakopen.org/archives/2026/Welcome_Letter_GateBreakOpen.pdf">https://www.gatebreakopen.org/archives/2026/Welcome_Letter_GateBreakOpen.pdf</a></td></tr>
-</tbody></table>
-<a class="download-button" download="" href="Welcome_Letter_GateBreakOpen.pdf">Download PDF</a>
-</section>
-<section>
-<h2>Persistent Identification Note</h2>
-<p class="persistent-note">This page is intended to function as the stable landing page associated with the ARK identifier <code>ark:/78326/gbo01welcomeletter</code>. The direct PDF file may be updated only when necessary, while this landing page should remain stable for long-term identification, access, and traceability.</p>
-<p class="archive-light-nav"><a class="archive-light-link" href="../../archives.html">Return to Archives</a></p>
-</section>
-</main>
-<footer class="footer">
-<p>© 2026 Author(s). Published by GateBreakOpen. Licensed under CC BY-NC-ND 4.0 International.</p>
-<p>GateBreakOpen is online-only, zero-cost, AI-assisted, and not peer-reviewed.</p>
-<p><strong>Conceived, designed, and developed by Fabio Galli with Chatbot-Workflow support.</strong></p>
-<p><strong>Hosted with GitHub Pages.</strong></p>
-</footer>
+    <main>
+        <span class="kicker">GateBreakOpen Archive Record</span>
+        <h1>Welcome Letter to Authors and Colleagues</h1>
+        <p class="intro">This archive record provides access to the GateBreakOpen Welcome Letter, its persistent identifier page, and its downloadable PDF.</p>
+
+        <table>
+            <tr><th>Title</th><td>Welcome Letter to Authors and Colleagues</td></tr>
+            <tr><th>Publisher</th><td>GateBreakOpen</td></tr>
+            <tr><th>Publication year</th><td>2026</td></tr>
+            <tr><th>Resource type</th><td>Welcome letter / platform document</td></tr>
+            <tr><th>Persistent identifier</th><td><a href="../../ark/gbo01welcomeletter/">https://n2t.net/ark:/78326/gbo01welcomeletter</a></td></tr>
+            <tr><th>PDF</th><td><a href="Welcome_Letter_GateBreakOpen.pdf">Download PDF</a></td></tr>
+        </table>
+
+        <div class="buttons">
+            <a class="button" href="../../ark/gbo01welcomeletter/">Open Metadata Page</a>
+            <a class="button secondary" href="Welcome_Letter_GateBreakOpen.pdf">Download PDF</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Author(s). Published by GateBreakOpen. Licensed under CC BY-NC-ND 4.0 International.</p>
+        <p>GateBreakOpen is online-only, zero-cost, AI-assisted, and not peer-reviewed.</p>
+        <p>Conceived, designed, and developed by Fabio Galli with Chatbot-Workflow support.</p>
+        <p>Hosted with GitHub Pages.</p>
+    </footer>
 </body>
 </html>
